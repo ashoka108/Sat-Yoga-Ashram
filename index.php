@@ -1,32 +1,39 @@
-<?php defined( '_JEXEC' ) or die( 'Restricted access' );?> <!-- Hello -->
+<?php defined( '_JEXEC' ) or die( 'Restricted access' );
+  // Include some Joomla variables to use in this template
+  $app = JFactory::getApplication();
+  $menu = $app->getMenu()->getActive(); // Get Current Active Menu
+  $pageclass = ''; // Create a variable for page class
+  // If there is a menu get the value of page class
+  if (is_object($menu))
+    $pageclass = $menu->params->get('pageclass_sfx');
+ ?>
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+
+
   <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Include Joomla Header code -->
     <jdoc:include type="head" />
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery-3.1.1.min.js"></script>
-    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/semantic/semantic.min.js"></script>
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
+    <!-- Load Semantic UI Library -->
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery-3.1.1.min.js"></script>
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/semantic/semantic.min.js"></script>
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/semantic/semantic.min.css" type="text/css" />
+    <!-- Load Custom CSS -->
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
   </head>
-  <body>
+
+
+  <body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
   <jdoc:include type="modules" name="top" />
   <jdoc:include type="component" />
   <jdoc:include type="modules" name="bottom" />
-<div class="ui grid">
-  <div class="column" style="text-align: center; background-color: gray;">1</div>
-  <div class="column" style="text-align: center; background-color: lightGray;">2</div>
-  <div class="column" style="text-align: center; background-color: gray;">3</div>
-  <div class="column" style="text-align: center; background-color: lightGray;">4</div>
-  <div class="column" style="text-align: center; background-color: gray;">5</div>
-  <div class="column" style="text-align: center; background-color: lightGray;">6</div>
-  <div class="column" style="text-align: center; background-color: gray;">7</div>
-  <div class="column" style="text-align: center; background-color: lightGray;">8</div>
-  <div class="column" style="text-align: center; background-color: gray;">9</div>
-  <div class="column" style="text-align: center; background-color: lightGray;">10</div>
-  <div class="column" style="text-align: center; background-color: gray;">11</div>
-  <div class="column" style="text-align: center; background-color: lightGray;">12</div>
-</div>
   </body>
 </html>
