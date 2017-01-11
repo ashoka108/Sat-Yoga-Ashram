@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+  <name>Sat Yoga Institute</name>
+  <creationDate>2017-09-01</creationDate>
+  <author>Ashoka</author>
+  <authorEmail>webmaster@satyoga.org</authorEmail>
+  <authorUrl>http://www.satyoga.org</authorUrl>
+  <copyright>Sat Yoga Institute 2017</copyright>
+  <license>GNU/GPL</license>
+  <version>1.0</version>
+  <description>Sat Yoga Semantic UI template</description>
+  <files>
+    <filename>index.php</filename>
+    <filename>templateDetails.xml</filename>
+    <folder>images</folder>
+    <folder>css</folder>
+    <folder>js</folder>
+  </files>
+  <positions>
+    <position>top</position>
+    <position>bottom</position>
+  </positions>
+</extension>
