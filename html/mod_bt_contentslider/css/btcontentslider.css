@@ -1,0 +1,233 @@
+/*======= BT CONTENT SLIDER ========*/
+.bt-cs {
+	position: relative;
+	border: none;
+}
+.slides_container {
+	overflow: hidden;
+	position: relative;
+    margin-bottom: 10px;
+}
+.bt-cs h3 {
+	color: #d67901;
+	line-height: 37px;
+	text-indent: 15px;
+	text-transform: uppercase;
+	background: url(../images/bg-header.png) repeat-x;
+	height: 37px;
+	border: 1px solid #cfcfcf;
+	margin: 0 !important;
+}
+
+/*
+	Handles - Next/prev buttons
+*/
+.bt-cs .next,.bt-cs .prev {
+	display: none;
+	width: 76px;
+    height: 100%;
+	opacity:1;
+    color: #1a5b75;
+}
+.bt-cs:hover .next, .bt-cs:hover .prev{
+	display:block;
+}
+.bt-cs .next:hover, .bt-cs .prev:hover{
+	opacity:0.8;
+}
+.bt-cs a.next {
+
+	position:absolute;
+	z-index:100;
+	margin:0;
+    top:170px;
+	padding:5px 0 0 15px;
+	right:-56px;
+}
+.bt-cs a.prev {
+
+    position: absolute;
+	z-index:999;
+	margin:0;
+    top:170px;
+    padding:5px 0 0 25px;
+	left:-78px;
+
+}
+.bt-cs i.huge.icon, i.huge.icons {
+    line-height: 1;
+    vertical-align: middle;
+    font-size: 3.5em;
+}
+
+
+.left-right {
+    position: relative;
+    width: 100%;
+}
+/*bullet */
+.bt-cs .bt_handles {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:101;
+}
+.bt-cs .bt_handles li {
+	float: left;
+	margin: 0 1px!important;
+	list-style:none;
+	padding:0px!important;
+	background:none!important;
+}
+.bt_handles li a {
+	display: block !important;
+	width: 12px;
+	height: 0;
+	padding-top: 12px;
+	background-image: url(../images/pagination.png);
+	background-position: 0 0;
+	float: left;
+	padding: 12px 0 0 0 !important;
+	overflow: hidden;
+}
+.bt_handles li.current a {
+	background-position: 0 -12px;
+}
+
+/*numbering */
+.bt-cs .bt_handles_num {
+	border: 1px solid red;
+	position: absolute !important;
+	margin:  0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	z-index:101;
+}
+.bt-cs .bt_handles_num li {
+	float: left;
+	margin: 0 1px!important;
+	list-style:none;
+	padding:0px!important;
+	background:none!important;
+}
+.bt_handles_num li a {
+	display: block !important;
+	width:12px;
+	height:15px;
+	line-height:15px;
+	background:grey;
+	float: left;
+	padding:0!important;
+	overflow: hidden;
+	text-align:center;
+	text-decoration:none;
+	color:#fff;
+	font-size:10px;
+}
+.bt_handles_num li a:hover{
+	opacity:0.8;
+}
+.bt_handles_num li.current a {
+	background:orange;
+}
+
+/*** CSS STYLE FOR ITEM ****/
+.bt-cs .bt-row {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	padding: 8px 0;
+}
+.bt-cs .bt-inner {
+	margin: 0;
+	position: relative;
+	padding: 0;
+}
+.bt-cs .bt-inner a {
+	text-decoration: none;
+}
+.bt-cs .bt-inner img {
+	max-width:100%;
+}
+
+.bt-cs .bt-inner .bt-title {
+	clear: both;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height:150%;
+	display:inline-block;
+}
+
+.bt-introtext   {margin-top: 20px;}
+.bt-cs .bt-inner .bt-category {
+	clear: both;
+	color: #4a4a4a;
+	font-weight: bold;
+	line-height:150%;
+
+}
+.bt-cs .bt-center{
+	text-align:center;
+    margin-bottom: 25px;
+}
+.bt-cs .bt-center img {
+    border: 3px solid #fff;
+}
+.bt-cs .bt-extra {
+	clear: both;
+	margin-top: 5px;
+}
+.bt-cs .bt-date,.bt-cs .bt-author {
+	font-weight: normal;
+	font-size: 80%;
+}
+.bt-row-separate {
+	clear: both;
+	height: 1px;
+	border-bottom: 1px dotted #959595;
+	margin: 0px 10px;
+	margin-bottom: 15px;
+}
+
+/* Custom CSS */
+.slider-text span {background: none; color: #fff; font-size: 16px;}
+
+.readmore a         {
+    background: rgba(18, 76, 100, 0.9);
+    color: #fff;
+    padding: 4px 14px;
+    position: absolute;
+    bottom: 15px;
+    right: 3px;
+    font-size: 11px;
+}
+.readmore a:hover   {color:#36a9e0;}
+
+.effect2
+{
+    position: relative;
+}
+.effect2:after
+{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 20px;
+    right: 3px;
+    left: auto;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #ccc;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
