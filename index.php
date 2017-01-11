@@ -12,7 +12,6 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 
-
   <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -26,14 +25,23 @@
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery-3.1.1.min.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/semantic/semantic.min.js"></script>
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/semantic/semantic.min.css" type="text/css" />
-    <!-- Load Custom CSS -->
+    <!-- Load Custom CSS & JS-->
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/css/template.css" type="text/css" />
+    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/template.js"></script>
   </head>
 
-
   <body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
-  <jdoc:include type="modules" name="top" />
-  <jdoc:include type="component" />
-  <jdoc:include type="modules" name="bottom" />
+  <!-- Mobile Menu-->
+  <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
+  <?php if($this->countModules('mobile-sidebar')) : ?>
+      <jdoc:include type="modules" name="mobile-sidebar" style="xhtml" />
+    <?php endif; ?>
+  </div>
+  <div class="pusher">
+    <jdoc:include type="modules" name="top" />
+    <jdoc:include type="component" />
+    <jdoc:include type="modules" name="bottom" />
+  </div> <!-- Ends Pusher -->
   </body>
 </html>
+
