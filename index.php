@@ -7,11 +7,8 @@
   if (is_object($menu))
     $pageclass = $menu->params->get('pageclass_sfx');
  ?>
-
-
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
-
   <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -31,17 +28,86 @@
   </head>
 
   <body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
-  <!-- Mobile Menu-->
-  <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
-  <?php if($this->countModules('mobile-sidebar')) : ?>
-      <jdoc:include type="modules" name="mobile-sidebar" style="xhtml" />
-    <?php endif; ?>
-  </div>
-  <div class="pusher">
-    <jdoc:include type="modules" name="top" />
-    <jdoc:include type="component" />
-    <jdoc:include type="modules" name="bottom" />
-  </div> <!-- Ends Pusher -->
+    <!-- Mobile Menu-->
+    <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
+    <?php if($this->countModules('mobile-sidebar')) : ?>
+        <jdoc:include type="modules" name="mobile-sidebar" style="xhtml" />
+      <?php endif; ?>
+    </div>
+    <div class="pusher">
+    <!-- Include Top Menu -->
+      <div class="ui grid">
+        <div class="row">
+          <div class="ui fixed inverted navbar page">
+              <?php if($this->countModules('top')) : ?>
+              <jdoc:include type="modules" name="top" style="xhtml" />
+            <?php endif; ?>
+          </div>
+        </div>
+      </div>
+
+    <!-- Header Navbar  Logo - Menu - Search  -->
+    <div class="main-menu navbar">
+      <div class="ui responsive grid container">
+          <div class="computer only ten wide column">
+            <?php if($this->countModules('main-menu')) : ?>
+              <jdoc:include type="modules" name="main-menu" style="xhtml" />
+            <?php endif; ?>
+          </div>
+
+          <div class="mobile tablet only two wide very padded middle aligned right floated column" onclick="toggleMenu()">
+             <i class="big sidebar icon"></i>
+                Menu
+          </div>
+        </div>
+    </div>
+      <?php /* Uncomment to see variabled loaded in memory */
+        //echo('<pre>');print_r($this);echo('</pre>');
+      ?>
+        <!-- Page Grid -->
+        <div class="ui responsive grid container" >
+          <!-- Position above component -->
+          <?php if($this->countModules('aboveComponent')) : ?>
+            <div class="twelve wide column">
+              <jdoc:include type="modules" name="aboveComponent" style="xhtml" />
+            </div>
+          <?php endif; ?>
+          <!-- Position to display system messages -->
+          <jdoc:include type="message" />
+        </div>
+
+        <?php
+          // check if there are sidebar modules and set column width
+          if ($this->countModules('sidebar'))
+          {
+            $componentWidth = "nine wide";
+          }
+          else
+          {
+            $componentWidth = "twelve wide";
+          }
+        ?>
+        <!-- Joomla Component-->
+        <div id="componentContainer" class="ui component inverted grey segment container <?php echo $componentWidth ?> column">
+          <div class="ui segment container">
+
+            <jdoc:include type="component" />
+            <?php if($this->countModules('underComponent')) : ?>
+                <div class="twelve wide column">
+                  <!-- Under Component Position -->
+                  <jdoc:include type="modules" name="underComponent" style="xhtml" />
+                </div>
+            <?php endif; ?>
+          </div>
+        </div>
+        <!-- SideBar Module Position  -->
+        <?php if($this->countModules('sidebar')) : ?>
+          <div class="computer only three wide column" id="sidebarContext">
+             <div class="ui sticky" id="sideNav">
+              <jdoc:include type="modules" name="sidebar" style="xhtml" />
+            </div>
+          </div>
+        <?php endif; ?>
+    </div> <!-- Ends Pusher -->
   </body>
 </html>
-
