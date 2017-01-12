@@ -17,6 +17,11 @@
   </files>
   <positions>
     <position>top</position>
-    <position>bottom</position>
+    <position>mobile-sidebar</position>
+    <position>main-menu</position>
+    <position>aboveComponent</position>
+    <position>underComponent</position>
+    <position>sidebar</position>
+    <position>footer</position>
   </positions>
 </extension>

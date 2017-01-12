@@ -88,7 +88,7 @@
           }
         ?>
         <!-- Joomla Component-->
-        <div id="componentContainer" class="ui component inverted grey segment container <?php echo $componentWidth ?> column">
+        <div id="componentContainer" class="ui component segment container <?php echo $componentWidth ?> column">
           <div class="ui segment container">
 
             <jdoc:include type="component" />
@@ -108,6 +108,17 @@
             </div>
           </div>
         <?php endif; ?>
+
+        <!--  Footer Position -->
+        <div class="ui grid">
+          <div class="row">
+          <?php if($this->countModules('aboveComponent')) : ?>
+            <div class="twelve wide column">
+              <jdoc:include type="modules" name="aboveComponent" style="xhtml" />
+            </div>
+          <?php endif; ?>
+          </div>
+        </div>
     </div> <!-- Ends Pusher -->
   </body>
 </html>
