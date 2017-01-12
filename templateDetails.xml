@@ -19,6 +19,7 @@
     <position>top</position>
     <position>mobile-sidebar</position>
     <position>main-menu</position>
+    <position>search</position>
     <position>aboveComponent</position>
     <position>underComponent</position>
     <position>sidebar</position>

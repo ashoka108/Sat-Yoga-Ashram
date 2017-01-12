@@ -16,8 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <!-- Include Joomla Header code -->
     <jdoc:include type="head" />
-    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
-    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" />
+    <!--  <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/system.css" type="text/css" />
+    <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/system/css/general.css" type="text/css" /> -->
     <!-- Load Semantic UI Library -->
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/jquery-3.1.1.min.js"></script>
     <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/semantic/semantic.min.js"></script>
@@ -38,7 +38,7 @@
     <!-- Include Top Menu -->
       <div class="ui grid">
         <div class="row">
-          <div class="ui fixed inverted navbar page">
+          <div class="ui fixed navbar page">
               <?php if($this->countModules('top')) : ?>
               <jdoc:include type="modules" name="top" style="xhtml" />
             <?php endif; ?>
@@ -46,12 +46,17 @@
         </div>
       </div>
 
-    <!-- Header Navbar  Logo - Menu - Search  -->
+    <!-- Header Navbar Logo - Menu - Search  -->
     <div class="main-menu navbar">
       <div class="ui responsive grid container">
-          <div class="computer only twelve wide column">
+          <div class="computer only nine wide column">
             <?php if($this->countModules('main-menu')) : ?>
               <jdoc:include type="modules" name="main-menu" style="xhtml" />
+            <?php endif; ?>
+          </div>
+          <div class="computer tablet only three wide right floated column">
+            <?php if($this->countModules('search')) : ?>
+              <jdoc:include type="modules" name="search" style="xhtml" />
             <?php endif; ?>
           </div>
 
@@ -84,7 +89,7 @@
           }
           else
           {
-            $componentWidth = "twelve wide";
+            $componentWidth = "twelve wide";x
           }
         ?>
         <!-- Joomla Component-->
