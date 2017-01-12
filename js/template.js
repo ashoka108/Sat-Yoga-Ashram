@@ -1,6 +1,6 @@
 // Toggles the mobile sidebar menu
 function toggleMobileMenu(){
-  $('.ui.sidebar')
+  jQuery('.ui.sidebar')
   .sidebar('toggle');
 }
 

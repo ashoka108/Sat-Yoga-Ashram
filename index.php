@@ -49,13 +49,13 @@
     <!-- Header Navbar  Logo - Menu - Search  -->
     <div class="main-menu navbar">
       <div class="ui responsive grid container">
-          <div class="computer only ten wide column">
+          <div class="computer only twelve wide column">
             <?php if($this->countModules('main-menu')) : ?>
               <jdoc:include type="modules" name="main-menu" style="xhtml" />
             <?php endif; ?>
           </div>
 
-          <div class="mobile tablet only two wide very padded middle aligned right floated column" onclick="toggleMenu()">
+          <div class="mobile tablet only two wide very padded middle aligned right floated column" onclick="toggleMobileMenu()">
              <i class="big sidebar icon"></i>
                 Menu
           </div>
@@ -114,7 +114,7 @@
           <div class="row">
           <?php if($this->countModules('aboveComponent')) : ?>
             <div class="twelve wide column">
-              <jdoc:include type="modules" name="aboveComponent" style="xhtml" />
+              <jdoc:include type="modules" name="footer" style="xhtml" />
             </div>
           <?php endif; ?>
           </div>
