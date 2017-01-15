@@ -3,4 +3,3 @@ function toggleMobileMenu(){
   jQuery('.ui.sidebar')
   .sidebar('toggle');
 }
-
