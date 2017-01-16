@@ -1,0 +1,23 @@
+.ui.main-nav.menu {
+  top: 5px;
+  justify-content: center;
+  border: none;
+}
+.ui.main-nav.menu .item {
+  padding: 20px 30px;
+  text-transform: uppercase;
+}
+.ui.main-nav.menu .item.logo {
+
+}
+.ui.main-nav.menu .item.logo:hover {
+  background-color: lightgrey;
+}
+.ui.main-nav.menu .item:hover {
+  background-color: lightgrey;
+  color: #fff;
+}
+
+.container.slider img {
+  width: 100%;
+}
