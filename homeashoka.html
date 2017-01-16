@@ -31,6 +31,10 @@
       	font-size: 4em;
       	font-weight: normal;
     }
+     .breadcrumb.container {
+      	margin-top: 15em;
+      	margin-bottom: 0em;
+    }
 
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
@@ -54,12 +58,14 @@
         margin-top: 0.5em;
         font-size: 1em;
       }
+      .breadcrumb.container {
+      	display: none;
     }
+}
 
   </style>
 
 <script>
-
 
 $(document)
   .ready(function() {
@@ -196,7 +202,7 @@ $(document)
           </div>
           </a>
           <div class="header item">
-            <img class="logo" src="adharma.png">
+            <img class="logo" src="./image/adharma.png">
             Sat Yoga
           </div>
           <a class="item">Teachings</a>
@@ -205,6 +211,7 @@ $(document)
       </div>
     </div>
   </div>
+
   <!-- Page Content -->
   <div class="pusher">
 
@@ -257,7 +264,7 @@ $(document)
           </div>
           </a>
           <div class="header item">
-            <img class="logo" src="adharma.png">
+            <img class="logo" src="./image/adharma.png">
             Sat Yoga
           </div>
           <a class="item">Teachings</a>
@@ -265,17 +272,31 @@ $(document)
           <a class="item">Blog</a>
       </div>
   </div>
+
+  <!-- Title and subtitle for banner -->
   <div class="ui text container">
   	<h1 class="ui inverted header">
-  	Sat Yoga Ashram
+  	Visiting
   	</h1>
   	<h2>Retreats | Wisdom School | Community</h2>
   </div>
+  <div class="ui left aligned breadcrumb container">
+	  <a class="section">Home</a>
+	  <i class="right angle icon divider"></i>
+	  <a class="section">visiting</a>
+	  <i class="right angle icon divider"></i>
+	  <div class="active section">First time visitors</div>
+</div>
 </div>
 
     <div class="ui text container">
     <br/>
+    <h2>First time visitors</h2>
       <p>Cray retro bushwick, live-edge small batch williamsburg viral single-origin coffee schlitz skateboard wolf plaid unicorn brooklyn edison bulb. Portland ennui DIY street art quinoa, retro butcher beard narwhal listicle artisan kickstarter. Helvetica small batch brooklyn keffiyeh cornhole unicorn. Hella flannel leggings helvetica small batch chia. Squid hammock tousled leggings. 3 wolf moon pour-over quinoa dreamcatcher, ramps migas butcher. Scenester celiac seitan twee, street art man bun bespoke kitsch.</p>
+
+      <div class="ui divider"></div>
+      <img class="ui fluid image" src="./image/bluemoon.jpg">
+      <div class="ui divider"></div>
 
       <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile. Meggings plaid umami, disrupt etsy four dollar toast yr venmo heirloom master cleanse brunch swag try-hard iceland. Banh mi ennui fanny pack, chambray schlitz everyday carry hell of migas cardigan coloring book letterpress bicycle rights 90's typewriter pop-up.</p>
 
