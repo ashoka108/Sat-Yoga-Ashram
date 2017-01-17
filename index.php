@@ -31,7 +31,7 @@
     <!-- Mobile Menu-->
     <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
     <?php if($this->countModules('mobile-sidebar')) : ?>
-        <jdoc:include type="modules" name="mobile-sidebar" style="xhtml" />
+        <jdoc:include type="modules" name="mobile-sidebar" style="none" />
       <?php endif; ?>
     </div>
     <div class="pusher">

@@ -6,49 +6,130 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <!-- Load Semantic UI -->
-    <script src="../js/jquery-3.1.1.min.js"></script>
-    <script src="../semantic/semantic.min.js"></script>
-    <link rel="stylesheet" href="../semantic/semantic.min.css" type="text/css" />
-    <!-- Load Custom CSS & JS -->
-    <link rel="stylesheet" href="../css/template.css" type="text/css" />
-    <script src="../js/template.js"></script>
+    <!-- Include Joomla Header code -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="semantic/semantic.min.js"></script>
+    <link rel="stylesheet" href="semantic/semantic.min.css" type="text/css" />
+    <!-- Load Custom CSS & JS-->
+    <link rel="stylesheet" href="css/template.css" type="text/css" />
+    <script src="js/template.js"></script>
   </head>
 
   <body class="">
-    <!-- Top Menu -->
-    <div class="ui menu">
-      <a class="item">Membership</a>
-      <a class="item">Calendar</a>
-      <a class="item">Contact</a>
-      <a class="item">Donate</a>
-      <div class="right menu">
-        <a class="item"><i class="facebook icon"></i></a>
-        <a class="item"><i class="youtube icon"></i></a>
-        <div class="item">
-          <div class="ui icon input">
-            <input type="text" placeholder="Search...">
-            <i class="search link icon"></i>
+    <!-- Mobile Menu-->
+    <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
+    Mobile menu
+    </div>
+    <div class="pusher">
+      <!-- Include Top Menu -->
+      <div class="ui grid">
+        <div class="row">
+          <div class="ui navbar">
+            navbar and language
           </div>
         </div>
       </div>
-    </div>
-    <!-- Main Menu -->
-    <nav class="ui main-nav menu">
-      <div class="center menu">
-        <a class="item">home</a>
-        <a class="item">about</a>
-        <a class="item">visit</a>
-        <a class="header item"><img class="logo" src="../images/logo-placeholder.jpg" /></a>
-        <a class="item">retreats & programs</a>
-        <a class="item">teachings</a>
-        <a class="item">blogs</a>
+      <!-- Header Navbar Logo - Menu - Search  -->
+      <div class="main-menu navbar">
+        <div class="ui responsive grid container">
+          <div class="computer only nine wide column">
+            main menu
+          </div>
+          <div class="computer tablet only three wide right floated column">
+            search
+          </div>
+          <div class="mobile tablet only two wide very padded middle aligned right floated column" onclick="toggleMobileMenu()">
+             <i class="big sidebar icon"></i>
+              Menu
+          </div>
+        </div>
       </div>
-    </nav>
-    <!-- Slider Container -->
-    <div class="ui fluid container slider">
-      <div class="item">
-        <img src="http://lorempixel.com/output/nature-q-c-1000-250-4.jpg">
+
+      <div class="ui responsive grid">
+
+          <div class="twelve wide column">
+            creative
+          </div>
+
+
+          <div class="twelve wide column" id="breadcrumbs">
+            breadcrubms
+          </div>
+
+      </div>
+      <!-- Page Grid -->
+      <div class="ui responsive grid container" >
+
+      <!-- Position above component -->
+          <div class="twelve wide column">
+            above component
+          </div>
+
+      <!-- Joomla Component-->
+      <div id="componentContainer" class="ui component segment container twelve wide column">
+        <!-- Position to display system messages -->
+
+            <div class="twelve wide column">
+              <!-- Under Component Position -->
+
+            </div>
+
+      </div>
+    </div>
+
+      <!--  Footer Position -->
+<!--       <div class="ui grid">
+        <div class="row">
+          <div class="twelve wide column">
+            footer
+          </div>
+        </div>
+      </div> -->
+    </div> <!-- Ends Pusher -->
+
+<div class="ui grid">
+  <div class="six wide column">
+    <p>Cray retro bushwick, live-edge small batch williamsburg viral single-origin coffee schlitz skateboard wolf plaid unicorn brooklyn edison bulb. Portland ennui DIY street art quinoa, retro butcher beard narwhal listicle artisan kickstarter. Helvetica small batch brooklyn keffiyeh cornhole unicorn. Hella flannel leggings helvetica small batch chia. Squid hammock tousled leggings. 3 wolf moon pour-over quinoa dreamcatcher, ramps migas butcher. Scenester celiac seitan twee, street art man bun bespoke kitsch.\
+    </p>
+  </div>
+  <div class="six wide column">
+    <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile. Meggings plaid umami, disrupt etsy four dollar toast yr venmo heirloom master cleanse brunch swag try-hard iceland. Banh mi ennui fanny pack, chambray schlitz everyday carry hell of migas cardigan coloring book letterpress bicycle rights 90's typewriter pop-up.</p>
+  </div>
+  <div class="six wide column">
+    <p>Shabby chic whatever church-key drinking vinegar flannel, chillwave hexagon quinoa salvia brooklyn. Portland tumblr edison bulb, beard organic try-hard celiac actually cronut PBR&B flannel stumptown ennui. Messenger bag small batch whatever, sartorial gluten-free williamsburg cornhole ramps PBR&B food truck marfa vinyl. Blog bitters vinyl, lo-fi street art hell of unicorn tattooed kale chips cray gochujang tacos. La croix vexillologist knausgaard, tofu banjo jean shorts keytar vinyl hoodie wolf waistcoat kinfolk bushwick cliche. Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt.</p>
+  </div>
+  <div class="six wide column">
+    <p>Bespoke you probably haven't heard of them paleo church-key art party dreamcatcher. PBR&B tbh tousled meggings occupy, yuccie synth quinoa unicorn. Cornhole drinking vinegar pug, lyft shoreditch disrupt lumbersexual selfies. Offal 90's fixie, narwhal butcher copper mug scenester irony. Bicycle rights mlkshk 90's man braid, austin lumbersexual tbh authentic master cleanse vice af beard banjo pickled tofu. Sartorial authentic taxidermy, synth succulents tousled church-key. Before they sold out ennui affogato poke blue bottle blog</p>
+  </div>
+</div>
+
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">About</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Sitemap</a>
+              <a href="#" class="item">Contact Us</a>
+              <a href="#" class="item">Religious Ceremonies</a>
+              <a href="#" class="item">Gazebo Plans</a>
+            </div>
+          </div>
+          <div class="three wide column">
+            <h4 class="ui inverted header">Services</h4>
+            <div class="ui inverted link list">
+              <a href="#" class="item">Banana Pre-Order</a>
+              <a href="#" class="item">DNA FAQ</a>
+              <a href="#" class="item">How To Access</a>
+              <a href="#" class="item">Favorite X-Men</a>
+            </div>
+          </div>
+          <div class="six wide column">
+            <h4 class="ui inverted header">Footer Header</h4>
+            <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
