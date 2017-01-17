@@ -12,26 +12,94 @@
     <!-- Load Custom CSS & JS-->
     <script src="../js/template.js"></script>
     <!-- page specific CSS -->
-    <style type="text/css">
+    
+   <style type="text/css">
+    
     .hidden.menu {
     display: none;
     }
     .masthead.segment {
-    min-height: 700px;
+	    height: 700px;
+	    background-image: url(http://lorempixel.com/output/nature-q-c-1900-700-8.jpg)!important;
+	    background-position-x: center;
+	    background-position-y: center;
+	    background-size: cover;
+	    background-repeat-x: no-repeat;
+	    background-repeat-y: no-repeat;
     }
     .secondary.borderless.menu .mobile.item {
-    display: none;
+    	display: none;
     }
+    .lane {
+	    margin: 0 auto;
+	    max-width: 1127px;
+	    background-color: white;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	}
     .masthead h1.ui.header {
-      margin-top: 3em;
-      margin-bottom: 0em;
-      font-size: 4em;
-      font-weight: normal;
+     	margin-top: 3em;
+     	margin-bottom: 0em;
+     	font-size: 4em;
+     	font-weight: normal;
+    }
+    .masthead h2 {
+      	margin-bottom: 2em;
+      }
+    .backdrop {
+    	background-color: #FAFFFF;
     }
     .breadcrumb.container {
-      margin-top: 15em;
-      margin-bottom: 0em;
+    	margin-top: 8em;
+    	margin-bottom: 0em;
     }
+    .pagesummary {
+    	font-size: 2em;
+    	font-weight: bold;
+    }
+    .aboutsy.segment {
+    	min-height: 500px;
+    	background-image: url(http://lorempixel.com/output/abstract-q-g-1100-500-9.jpg);
+    	background-position-x: center;
+    	background-position-y: center;
+    	background-size: cover;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    } 
+        .aboutshunya.segment {
+    	min-height: 500px;
+    	background-image: url(http://lorempixel.com/output/abstract-q-g-1100-500-4.jpg);
+    	background-position-x: center;
+    	background-position-y: center;
+    	background-size: cover;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    } 
+        .insperation.segment {
+    	min-height: 300px;
+    	background-image: url(http://lorempixel.com/output/abstract-q-c-1100-500-4.jpg);
+    	background-position-x: center;
+    	background-position-y: center;
+    	background-size: cover;
+    	background-repeat-x: no-repeat;
+    	background-repeat-y: no-repeat;
+    } 
+    .description {
+      	font-size: 1.2em;
+      }
+      .centered.header {
+      	padding-top: 5em;
+      }
+      .card.header {
+      	text-align: center;
+      	background-color: white;
+      }
+      .image.card {
+      	max-width: 400px;
+      	max-height: 400px;
+      }
+     
     @media only screen and (max-width: 700px) {
       .ui.fixed.menu {
       display: none !important;
@@ -44,7 +112,7 @@
       display: block;
       }
       .masthead.segment {
-      min-height: 350px;
+      max-height: 350px;
       }
       .masthead h1.ui.header {
       font-size: 2em;
@@ -57,8 +125,13 @@
       .breadcrumb.container {
         display: none;
       }
+      .computer.only {
+      	display: none;
+      }
     }
     </style>
+
+
     <script type="text/javascript">
     $(document)
     .ready(function() {
@@ -89,8 +162,10 @@
     .accordion();
     });
     </script>
+
   </head>
-  <body>
+
+  <body class="backdrop">
     <!-- Sidebar Mobile Menu -->
     <div class="ui vertical accordion sidebar menu">
       <a class="active item">Home</a>
@@ -145,7 +220,7 @@
                 Packlist
               </div>
               <div class="field">
-                Getting heré
+                Getting here
               </div>
               <div class="field">
                 FAQ
@@ -197,7 +272,7 @@
   </div>
   <!-- Page Content -->
   <div class="pusher">
-    <!-- Banner img -->
+    <!-- Banner segment -->
     <div class="ui inverted vertical masthead center aligned segment">
       <!-- Top header menu -->
       <div class="ui computer only inverted secondary menu">
@@ -207,7 +282,7 @@
         <a class="item">Sign in</a>
         <div class="right menu">
           <div class="item">
-            <div class="ui icon input">
+            <div class="ui icon input" style="padding-right: 4em;">
               <input type="text" placeholder="Search...">
               <i class="search link icon"></i>
             </div>
@@ -258,7 +333,9 @@
         Visiting
         </h1>
         <h2>Retreats | Wisdom School | Community</h2>
+        <div class="ui right floated huge primary button">Come Join Us! <i class="right arrow icon"></i></div>
       </div>
+
       <div class="ui left aligned breadcrumb container">
         <a class="section">Home</a>
         <i class="right angle icon divider"></i>
@@ -267,27 +344,348 @@
         <div class="active section">First time visitors</div>
       </div>
     </div>
-    <div class="ui text container">
-      <br/>
-      <h2>First time visitors</h2>
-      <p>Cray retro bushwick, live-edge small batch williamsburg viral single-origin coffee schlitz skateboard wolf plaid unicorn brooklyn edison bulb. Portland ennui DIY street art quinoa, retro butcher beard narwhal listicle artisan kickstarter. Helvetica small batch brooklyn keffiyeh cornhole unicorn. Hella flannel leggings helvetica small batch chia. Squid hammock tousled leggings. 3 wolf moon pour-over quinoa dreamcatcher, ramps migas butcher. Scenester celiac seitan twee, street art man bun bespoke kitsch.</p>
-      <div class="ui divider"></div>
-      <img class="ui fluid image" src="../images/bluemoon.jpg">
-      <div class="ui divider"></div>
-      <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile. Meggings plaid umami, disrupt etsy four dollar toast yr venmo heirloom master cleanse brunch swag try-hard iceland. Banh mi ennui fanny pack, chambray schlitz everyday carry hell of migas cardigan coloring book letterpress bicycle rights 90's typewriter pop-up.</p>
-      <p>Shabby chic whatever church-key drinking vinegar flannel, chillwave hexagon quinoa salvia brooklyn. Portland tumblr edison bulb, beard organic try-hard celiac actually cronut PBR&B flannel stumptown ennui. Messenger bag small batch whatever, sartorial gluten-free williamsburg cornhole ramps PBR&B food truck marfa vinyl. Blog bitters vinyl, lo-fi street art hell of unicorn tattooed kale chips cray gochujang tacos. La croix vexillologist knausgaard, tofu banjo jean shorts keytar vinyl hoodie wolf waistcoat kinfolk bushwick cliche. Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt.</p>
-      <p>Bespoke you probably haven't heard of them paleo church-key art party dreamcatcher. PBR&B tbh tousled meggings occupy, yuccie synth quinoa unicorn. Cornhole drinking vinegar pug, lyft shoreditch disrupt lumbersexual selfies. Offal 90's fixie, narwhal butcher copper mug scenester irony. Bicycle rights mlkshk 90's man braid, austin lumbersexual tbh authentic master cleanse vice af beard banjo pickled tofu. Sartorial authentic taxidermy, synth succulents tousled church-key. Before they sold out ennui affogato poke blue bottle blog</p>
-      <p>Cray retro bushwick, live-edge small batch williamsburg viral single-origin coffee schlitz skateboard wolf plaid unicorn brooklyn edison bulb. Portland ennui DIY street art quinoa, retro butcher beard narwhal listicle artisan kickstarter. Helvetica small batch brooklyn keffiyeh cornhole unicorn. Hella flannel leggings helvetica small batch chia. Squid hammock tousled leggings. 3 wolf moon pour-over quinoa dreamcatcher, ramps migas butcher. Scenester celiac seitan twee, street art man bun bespoke kitsch.
-      </p>
-      <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile. Meggings plaid umami, disrupt etsy four dollar toast yr venmo heirloom master cleanse brunch swag try-hard iceland. Banh mi ennui fanny pack, chambray schlitz everyday carry hell of migas cardigan coloring book letterpress bicycle rights 90's typewriter pop-up.</p>
-      <p>Shabby chic whatever church-key drinking vinegar flannel, chillwave hexagon quinoa salvia brooklyn. Portland tumblr edison bulb, beard organic try-hard celiac actually cronut PBR&B flannel stumptown ennui. Messenger bag small batch whatever, sartorial gluten-free williamsburg cornhole ramps PBR&B food truck marfa vinyl. Blog bitters vinyl, lo-fi street art hell of unicorn tattooed kale chips cray gochujang tacos. La croix vexillologist knausgaard, tofu banjo jean shorts keytar vinyl hoodie wolf waistcoat kinfolk bushwick cliche. Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt.</p>
-      <p>Bespoke you probably haven't heard of them paleo church-key art party dreamcatcher. PBR&B tbh tousled meggings occupy, yuccie synth quinoa unicorn. Cornhole drinking vinegar pug, lyft shoreditch disrupt lumbersexual selfies. Offal 90's fixie, narwhal butcher copper mug scenester irony. Bicycle rights mlkshk 90's man braid, austin lumbersexual tbh authentic master cleanse vice af beard banjo pickled tofu. Sartorial authentic taxidermy, synth succulents tousled church-key. Before they sold out ennui affogato poke blue bottle blog</p>
-      <p>Cray retro bushwick, live-edge small batch williamsburg viral single-origin coffee schlitz skateboard wolf plaid unicorn brooklyn edison bulb. Portland ennui DIY street art quinoa, retro butcher beard narwhal listicle artisan kickstarter. Helvetica small batch brooklyn keffiyeh cornhole unicorn. Hella flannel leggings helvetica small batch chia. Squid hammock tousled leggings. 3 wolf moon pour-over quinoa dreamcatcher, ramps migas butcher. Scenester celiac seitan twee, street art man bun bespoke kitsch.
-      </p>
-      <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile. Meggings plaid umami, disrupt etsy four dollar toast yr venmo heirloom master cleanse brunch swag try-hard iceland. Banh mi ennui fanny pack, chambray schlitz everyday carry hell of migas cardigan coloring book letterpress bicycle rights 90's typewriter pop-up.</p>
-      <p>Shabby chic whatever church-key drinking vinegar flannel, chillwave hexagon quinoa salvia brooklyn. Portland tumblr edison bulb, beard organic try-hard celiac actually cronut PBR&B flannel stumptown ennui. Messenger bag small batch whatever, sartorial gluten-free williamsburg cornhole ramps PBR&B food truck marfa vinyl. Blog bitters vinyl, lo-fi street art hell of unicorn tattooed kale chips cray gochujang tacos. La croix vexillologist knausgaard, tofu banjo jean shorts keytar vinyl hoodie wolf waistcoat kinfolk bushwick cliche. Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt.</p>
-      <p>Bespoke you probably haven't heard of them paleo church-key art party dreamcatcher. PBR&B tbh tousled meggings occupy, yuccie synth quinoa unicorn. Cornhole drinking vinegar pug, lyft shoreditch disrupt lumbersexual selfies. Offal 90's fixie, narwhal butcher copper mug scenester irony. Bicycle rights mlkshk 90's man braid, austin lumbersexual tbh authentic master cleanse vice af beard banjo pickled tofu. Sartorial authentic taxidermy, synth succulents tousled church-key. Before they sold out ennui affogato poke blue bottle blog</p>
+   		 <div class="lane">
+    		<div class="ui text container">
+    			<p style="font-size: 1.5em; padding: 5em 0em">Sat Yoga Ashram is a wisdom school, retreat center, and spiritual community located in the mountains of southern Costa Rica. We offer a refuge of peace to study, to heal, to meditate, to transform, and to realize your highest potential.</p>
+			</div>
+			<div class="ui stackable two column grid" style="padding-bottom: 10em;">
+					<div class="column">
+						<a class="ui centered image card">
+							<div class="card header">
+								<h3 style="font-size: 2.5em;">Programs &amp; Retreats</h3>
+							</div>
+							<div class="image">
+							<img src="http://lorempixel.com/output/nature-q-c-350-350-8.jpg">
+							</div>
+							</a>
+						</div>
+					<div class="column">
+						<a class="ui centered image card segment">
+							<div class="card header">
+								<h3 style="font-size: 2.5em;">Shunyamurti Teachings</h3>
+							</div>
+							<div class="image">
+								<img src="http://lorempixel.com/output/nature-q-c-350-350-8.jpg">
+							</div>
+						</a>
+					</div>
+			</div>
+			<div class="ui aboutsy segment">
+				<div class="ui stackable two column grid" style="padding-top: 3em;">
+					<div class="column description" style="padding: 3em 3em;">
+					<h2 style="font-size: 2em;">About Sat Yoga Ashram</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+					<div class="column description" style="padding: 6em 3em 3em 3em;">
+					<p style="padding-bottom: 2em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<div class="ui left floated huge primary button">More About Sat Yoga Ashram<i class="right arrow icon"></i></div>
+					</div>
+				</div>
+			</div>
+	      <div class="ui text container">
+	      	<div class="ui centered header">
+				<h2 style="font-size: 2em;">About the Teachings<i class="small right arrow icon"></i></h2>
+			</div>
+		<div class="description">
+	      <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile.</p>
+	    </div>
+	    </div>
+  		<div class="ui stackable two column grid" style="padding-top: 2em;">
+			<div class="column description" style="padding: 2em 3em 0em 3em;">
+			<h2 style="font-size: 2em;">The Trivium</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<br/>
+			</div>
+			<div class="column description" style="padding: 5em 3em 0em 3em;">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+		 <div class="ui stackable three column grid" style="padding-bottom: 4em;">
+			<div class="column">
+			<a class="ui centered content card">
+				<div class="card header">
+					<h3 style="font-size: 2.5em;">Translation</h3>
+				</div>
+				<div class="image">
+					<img src="http://lorempixel.com/output/nature-q-c-350-350-8.jpg">
+				</div>
+			</a>
+			</div>
+			<div class="column">
+			<a class="ui centered content card">
+				<div class="card header">
+					<h3 style="font-size: 2.5em;">Meditation</h3>
+				</div>
+				<div class="image">
+					<img src="http://lorempixel.com/output/nature-q-c-350-350-8.jpg">
+				</div>
+			</a>
+			</div>
+			<div class="column">
+			<a class="ui centered content card">
+				<div class="card header">
+					<h3 style="font-size: 2.5em;">Transformation</h3>
+				</div>
+				<div class="image">
+					<img src="http://lorempixel.com/output/nature-q-c-350-350-8.jpg">
+				</div>
+			</a>
+			</div>
+		</div>
+		<div class="ui insperation segment">
+		</div>
+		<div class="ui text container">
+	      	<div class="ui centered header">
+				<h2 style="font-size: 2em;">About the Community<i class="right small arrow icon"></i></h2>
+			</div>
+		<div class="description">
+	      <p>Cronut activated charcoal cray sartorial copper mug master cleanse. Pork belly pabst chartreuse, cold-pressed ethical lomo wolf. Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier. Paleo fap waistcoat try-hard. Food truck 8-bit raclette, bitters brunch fingerstache vinyl four dollar toast pug before they sold out vexillologist deep v portland selfies subway tile.</p>
+	    </div>
+	    </div>
+	    <div class="ui two column stackable grid" style="padding: 5em 0em;">
+	    	<div class="column" style="padding-left: 5em">
+	    		<div class="ui link items">
+	    			<div class="item">
+	    				<div class="header">
+	    					<h2>Recent Activity</h2>
+	    				</div>
+	    			</div>
+	    			<div class="item">
+			    		<div class="ui tiny image">
+			    			<img src="../images/adharma.png">
+			    		</div>
+			    		<div class="content">
+			    			<div class="article header">Chekhof season at Arunachala</div>
+			    			<div class="description">
+			    				<p>Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="item">
+			    		<div class="ui tiny image">
+			    			<img src="../images/adharma.png">
+			    		</div>
+			    		<div class="content">
+			    			<div class="article header">Chekhof season at Arunachala</div>
+			    			<div class="description">
+			    				<p>Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt</p>
+			    			</div>
+			    		</div>
+			    	</div>
+			    	<div class="item">
+			    		<div class="ui tiny image">
+			    			<img src="../images/adharma.png">
+			    		</div>
+			    		<div class="content">
+			    			<div class="article header">Chekhof season at Arunachala</div>
+			    			<div class="description">
+			    				<p>Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt</p>
+	    					</div>
+	    				</div>
+	    			</div>
+	  		  	</div>
+			</div>
+			    <div class="column" style="padding-right: 5em;">
+			   		<div class="ui link items">
+						<div class="item">
+		    				<div class="header">
+		    					<h2>Featured Articles</h2>
+		    				</div>
+		    			</div>
+						<div class="item">
+						    <div class="ui tiny image">
+						      <img src="../images/adharma.png">
+						     </div>
+						    <div class="content">
+						     	 <div class="article header">Chekhof season at Arunachala</div>
+						     	<div class="description">
+						        <p>Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt</p>
+						      	</div>
+						    </div>
+						</div>
+						<div class="item">
+					    	<div class="ui tiny image">
+					      	<img src="../images/adharma.png">
+					   		</div>
+					    	<div class="content">
+					      		<div class="article header">Chekhof season at Arunachala</div>
+					      		<div class="description">
+					       		<p>Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt</p>
+					     		</div>
+					    	</div>
+					  	</div>
+					  	<div class="item">
+					    	<div class="ui tiny image">
+					      		<img src="../images/adharma.png">
+					    	</div>
+					    	<div class="content">
+					      		<div class="article header">Chekhof season at Arunachala</div>
+					      	<div class="description">
+					        <p>Cornhole semiotics hella meditation tbh hashtag blog, you probably haven't heard of them mumblecore. Edison bulb ennui post-ironic, swag mumblecore gentrify truffaut disrupt</p>
+					      	</div>
+					    	</div>
+	 					</div>
+	 				</div>
+				</div>
+	    	</div>
+	    	<div class="ui aboutshunya segment">
+				<div class="ui stackable two column grid" style="padding-top: 3em;">
+					<div class="column description" style="padding: 3em 3em;">
+						<h2 style="font-size: 2em;">About Shunyamurti</h2>
+						<div class="ui grid">
+							<div class="five wide column">
+								<img class="ui small centered rounded image" src="../images/Shunya_closeup.jpg" style="padding-top: 3em;">
+							</div>
+							<div class="seven wide column">
+								<p style="padding-bottom: 2em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur.</p>
+							</div>
+						</div>
+					</div>
+					<div class="column description" style="padding: 6em 3em 3em 3em;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<br/>
+						<div class="ui left floated huge primary button">More About Shunyamurti<i class="right arrow icon"></i></div>
+						</div>
+					</div>
+				</div>
+				<div class="ui text container">
+	      			<div class="ui centered header">
+					<h2 style="font-size: 2em;">Upcoming Programs &amp; Retreats<i class="right small arrow icon"></i></h2>
+					</div>
+				</div>
+				<div class="ui stackable two column grid" style="padding: 5em;">
+					<div class="column">
+					<div class="ui items">
+						<div class="item">
+						    <div class="ui small image">
+						      <img src="../images/bluemoon.jpg">
+						    </div>
+						    <div class="content">
+						      <div class="header">Arrowhead Valley Camp</div>
+						      <div class="meta">
+						        <span class="price">$1200</span>
+						        <span class="stay">1 Month</span>
+						      </div>
+						      <div class="description">
+						        <p>Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="item">
+						    <div class="ui small image">
+						      <img src="../images/bluemoon.jpg">
+						    </div>
+						    <div class="content">
+						      <div class="header">Buck's Homebrew Stayaway</div>
+						      <div class="meta">
+						        <span class="price">$1000</span>
+						        <span class="stay">2 Weeks</span>
+						      </div>
+						      <div class="description">
+						        <p>Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier</p>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="item">
+						    <div class="ui small image">
+						      <img src="../images/bluemoon.jpg">
+						    </div>
+						    <div class="content">
+						      <div class="header">Astrology Camp</div>
+						      <div class="meta">
+						        <span class="price">$1600</span>
+						        <span class="stay">6 Weeks</span>
+						      </div>
+						      <div class="description">
+						        <p>Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier</p>
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+					<div class="column">
+						<div class="ui items">
+							<div class="item">
+							    <div class="ui small image">
+							      <img src="../images/bluemoon.jpg">
+							    </div>
+							    <div class="content">
+							    	<div class="header">Arrowhead Valley Camp</div>
+							    	<div class="meta">
+							        	<span class="price">$1200</span>
+							        	<span class="stay">1 Month</span>
+							      	</div>
+							    	<div class="description">
+							        	<p>Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier</p>
+							      	</div>
+							    </div>
+							</div>
+							<div class="item">
+							    <div class="ui small image">
+							      <img src="../images/bluemoon.jpg">
+							    </div>
+							    <div class="content">
+							    	<div class="header">Buck's Homebrew Stayaway</div>
+							    	<div class="meta">
+							        	<span class="price">$1000</span>
+							        	<span class="stay">2 Weeks</span>
+							      	</div>
+							    	<div class="description">
+							        	<p>Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier</p>
+							    	</div>
+							    </div>
+							</div>
+							<div class="item">
+							    <div class="ui small image">
+							      <img src="../images/bluemoon.jpg">
+							    </div>
+							    <div class="content">
+							    	<div class="header">Astrology Camp</div>
+							    	<div class="meta">
+							        	<span class="price">$1600</span>
+							        	<span class="stay">6 Weeks</span>
+							    	</div>
+							    	<div class="description">
+							        	<p>Celiac you probably haven't heard of them chambray, green juice snackwave paleo whatever cardigan vexillologist organic synth vinyl vegan glossier</p>
+							    	</div>
+							    </div>
+							</div>
+						</div>
+					</div>
+				</div>
+	      <br/>
+	      <br/>
     </div>
+
     <div class="ui inverted vertical footer segment">
       <div class="ui container">
         <div class="ui stackable inverted divided equal height stackable grid">
@@ -315,6 +713,7 @@
           </div>
         </div>
       </div>
+    </div>
     </div>
     </div> <!-- Ends Pusher -->
   </body>
