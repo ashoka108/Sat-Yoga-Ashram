@@ -1,23 +1,113 @@
-.ui.main-nav.menu {
-  top: 5px;
-  justify-content: center;
-  border: none;
-}
-.ui.main-nav.menu .item {
-  padding: 20px 30px;
-  text-transform: uppercase;
-}
-.ui.main-nav.menu .item.logo {
+ .hidden.menu {
+    display: none;
+    }
+    .masthead.segment {
+      height: 700px;
+      background-image: url(http://lorempixel.com/output/nature-q-c-1900-700-8.jpg)!important;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .secondary.borderless.menu .mobile.item {
+      display: none;
+    }
+    .lane {
+      margin: 0 auto;
+      max-width: 1127px;
+      background-color: white;
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  }
+    .masthead h1.ui.header {
+      margin-top: 3em;
+      margin-bottom: 0em;
+      font-size: 4em;
+      font-weight: normal;
+    }
+    .masthead h2 {
+        margin-bottom: 2em;
+    }
+    .backdrop {
+      background-color: #FAFFFF;
+    }
+    .breadcrumb.container {
+      margin-top: 8em;
+      margin-bottom: 0em;
+    }
+    .pagesummary {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    .aboutsy.segment {
+      min-height: 500px;
+      background-image: url(http://lorempixel.com/output/abstract-q-g-1100-500-9.jpg);
+      background-position-x: center;
+      background-position-y: center;
+      background-size: cover;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+    }
+    .aboutshunya.segment {
+      min-height: 500px;
+      background-image: url(http://lorempixel.com/output/abstract-q-g-1100-500-4.jpg);
+      background-position-x: center;
+      background-position-y: center;
+      background-size: cover;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+    }
+    .insperation.segment {
+      min-height: 300px;
+      background-image: url(http://lorempixel.com/output/abstract-q-c-1100-500-4.jpg);
+      background-position-x: center;
+      background-position-y: center;
+      background-size: cover;
+      background-repeat-x: no-repeat;
+      background-repeat-y: no-repeat;
+    }
+    .description {
+        font-size: 1.2em;
+    }
+    .centered.header {
+        padding-top: 5em;
+        font-size: 2em;
+    }
+    .card.header {
+        text-align: center;
+        background-color: white;
+    }
+    .image.card {
+        max-width: 400px;
+        max-height: 400px;
+    }
 
-}
-.ui.main-nav.menu .item.logo:hover {
-  background-color: lightgrey;
-}
-.ui.main-nav.menu .item:hover {
-  background-color: lightgrey;
-  color: #fff;
-}
-
-.container.slider img {
-  width: 100%;
-}
+    @media only screen and (max-width: 700px) {
+      .ui.fixed.menu {
+        display: none !important;
+      }
+      .secondary.borderless.menu .item,
+      .secondary.borderless.menu .menu {
+        display: none;
+      }
+      .secondary.borderless.menu .mobile.item {
+        display: block;
+      }
+      .masthead.segment {
+        max-height: 350px;
+      }
+      .masthead h1.ui.header {
+        font-size: 2em;
+        margin-top: 1.5em;
+      }
+      .masthead h2 {
+        margin-top: 0.5em;
+        font-size: 1em;
+      }
+      .breadcrumb.container {
+          display: none;
+      }
+      .computer.only {
+          display: none;
+      }
+    }
