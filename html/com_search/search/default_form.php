@@ -23,7 +23,7 @@ $upper_limit = $lang->getUpperLimitSearchWord();
       <input type="hidden" name="task" value="search" />
     </div>
   </div>
-    
+
       <?php if ($this->params->get('search_areas', 1)) : ?>
    <div class="field">
         <legend><?php echo JText::_('COM_SEARCH_SEARCH_ONLY');?></legend>
@@ -52,7 +52,9 @@ $upper_limit = $lang->getUpperLimitSearchWord();
 </div>
   <div class="searchintro<?php echo $this->params->get('pageclass_sfx'); ?>">
     <?php if (!empty($this->searchword)):?>
-    <h3 class="ui dividing header"><?php echo('<div class="ui big orange label">' . $this->total . '</div>');?> Resultados encontrados</h3>
+    <h3 class="ui dividing header"><?php echo('<div class="ui big orange label">' . $this->total . '</div>');?>
+    <?php echo JText::_( 'ResultsFound' ); ?>
+</h3>
     <?php endif;?>
   </div>
 
