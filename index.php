@@ -62,9 +62,22 @@
             <jdoc:include type="modules" name="main-menu" style="none" />
           <?php endif; ?>
         </div>
+        <jdoc:include type="modules" name="image-slider" style="none" />
       </div>
-      <jdoc:include type="component" />
+      <div class="ui container">
+        <jdoc:include type="modules" name="breadcrumbs" style="none" />
+      </div>
+      <div class="ui raised segment container">
+        <div class="messages">
+          <jdoc:include type="modules" name="messages" style="none" />
+          <jdoc:include type="message" />
+        </div>
+        <jdoc:include type="modules" name="above-component" style="none" />
+        <jdoc:include type="component" />
+        <jdoc:include type="modules" name="right-sidebar" style="none" />
+        <jdoc:include type="modules" name="below-component" style="none" />
+      </div>
     </div> <!-- Ends Pusher -->
    <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/template.js"></script>
-   </body>
+  </body>
 </html>

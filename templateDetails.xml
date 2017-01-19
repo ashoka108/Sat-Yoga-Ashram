@@ -16,14 +16,22 @@
     <folder>css</folder>
   </files>
   <positions>
-    <position>top</position>
     <position>mobile-sidebar</position>
-    <position>following-menu</position>
-    <position>main-menu</position>
+    <position>top</position>
     <position>search</position>
-    <position>aboveComponent</position>
-    <position>underComponent</position>
-    <position>sidebar</position>
-    <position>footer</position>
+    <position>main-menu</position>
+    <position>image-slider</position>
+    <position>messages</position>
+    <position>breadcrumbs</position>
+    <position>above-component</position>
+    <position>right-sidebar</position>
+    <position>below-component</position>
+    <position>footer1</position>
+    <position>footer2</position>
+    <position>footer3</position>
+    <position>footer4</position>
+    <position>footer5</position>
+    <position>footer6</position>
+    <position>copyright</position>
   </positions>
 </extension>

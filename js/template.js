@@ -1,7 +1,8 @@
- function toggleMobileMenu(){
+function toggleMobileMenu(){
   jQuery('.ui.sidebar')
   .sidebar('toggle');
 }
+
 jQuery('#sideNav')
   .sticky({
   offset:120,
@@ -10,13 +11,19 @@ jQuery('#sideNav')
   context:'#componentContainer'
 });
 
- jQuery(document)
-    .ready(function() {
+jQuery(document)
+  .ready(function() {
     // show dropdown on hover
     jQuery('.secondary.menu .ui.dropdown').dropdown({
-    on: 'hover'
+      on: 'hover'
     });
+    jQuery('.dropdown')
+      .dropdown({
+        // you can use any ui transition
+        transition: 'drop'
+      })
+    ;
     // accordion function
     $('.ui.accordion')
     .accordion();
-    });
+  });
