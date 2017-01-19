@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  >
+  <head>
+    <!-- Standard Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <!-- Include Joomla Header code -->
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../semantic/semantic.min.js"></script>
+    <link rel="stylesheet" href="../semantic/semantic.min.css" type="text/css" />
+    <!-- Load Custom CSS & JS-->
+    <script src="../js/template.js"></script>
+    <!-- page specific CSS -->
+  </head>
+   <body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
+    <!-- Mobile Menu-->
+    <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
+      <?php if($this->countModules('mobile-sidebar')) : ?>
+        <jdoc:include type="modules" name="mobile-sidebar" style="none" />
+      <?php endif; ?>
+    </div>
+    <div class="pusher">
+    <!-- Banner segment -->
+      <div class="ui inverted vertical masthead segment">
+        <div class="ui tablet computer only responsive container">
+          <!-- Top header menu -->
+          <div class="left floted">
+          <?php if($this->countModules('top')) : ?>
+          <jdoc:include type="modules" name="top" style="none" />
+          <?php endif; ?>
+          </div>
+          <!-- Search -->
+          <div class="right floated">
+            <?php if($this->countModules('search')) : ?>
+              <jdoc:include type="modules" name="search" style="none" />
+            <?php endif; ?>
+          </div>
+        </div>
+        <div class="ui responsive container">
+           <!-- Mobile menu -->
+          <div class="ui mobile tablet only left floated" onclick="toggleMobileMenu()">
+            <i class="big sidebar icon"></i>
+              <?php echo JText::_( 'Menu' );?>
+          </div>
+          <!-- Logo -->
+          <div class="ui centered">
+            <img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/images/SYI_Logo_Trimmed.jpg" alt="Sat Yoga Ashram Logo">
+          </div>
+        </div>
+           <!-- Main menu -->
+        <div class="ui responsive container">
+          <?php if($this->countModules('main-menu')) : ?>
+            <jdoc:include type="modules" name="main-menu" style="none" />
+          <?php endif; ?>
+        </div>
+      </div>
+    </div> <!-- Ends Pusher -->
+  </body>
+</html>

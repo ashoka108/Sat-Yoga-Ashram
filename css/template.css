@@ -3,10 +3,12 @@
     }
     .masthead.segment {
       height: 700px;
-      background-image: url(http://lorempixel.com/output/nature-q-c-1900-700-8.jpg)!important;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+    }
+    .searchInput {
+      width: 20em;
     }
     .secondary.borderless.menu .mobile.item {
       display: none;
