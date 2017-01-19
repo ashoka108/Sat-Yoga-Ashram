@@ -16,4 +16,7 @@ jQuery('#sideNav')
     jQuery('.secondary.menu .ui.dropdown').dropdown({
     on: 'hover'
     });
-  });
+    // accordion function
+    $('.ui.accordion')
+    .accordion();
+    });

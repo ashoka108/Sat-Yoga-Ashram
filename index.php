@@ -29,7 +29,7 @@
 
   <body class="<?php echo $pageclass ? htmlspecialchars($pageclass) : 'default'; ?>">
     <!-- Mobile Menu-->
-    <div class="ui sidebar inverted vertical menu" id="mobile-sidebar">
+    <div class="ui sidebar inverted vertical accordion menu" id="mobile-sidebar">
       <?php if($this->countModules('mobile-sidebar')) : ?>
         <jdoc:include type="modules" name="mobile-sidebar" style="none" />
       <?php endif; ?>
