@@ -21,7 +21,8 @@ defined('_JEXEC') or die;
 			<div class="header"><?php echo $this->escape($result->title);?></div>
 			<?php endif; ?>
 			<div class="extra">
-				<a class="ui right floated basic orange button" href="<?php echo JRoute::_($result->href); ?>"<?php if ($result->browsernav == 1) :?> target="_blank"<?php endif;?>> Ver resultado <i class="right chevron icon"></i></a>
+				<a class="ui right floated basic orange button" href="<?php echo JRoute::_($result->href); ?>"<?php if ($result->browsernav == 1) :?> target="_blank"<?php endif;?>>
+				<?php echo JText::_( 'viewResult' ); ?> <i class="right chevron icon"></i></a>
 				<?php if ($result->section) :?>
 				<div class="left floated ui tag category labels <?php echo $this->pageclass_sfx; ?>">
 				  <a class="ui label">
