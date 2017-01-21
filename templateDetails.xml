@@ -17,7 +17,8 @@
   </files>
   <positions>
     <position>mobile-sidebar</position>
-    <position>top</position>
+    <position>top-left</position>
+    <position>top-right</position>
     <position>search</position>
     <position>main-menu</position>
     <position>image-slider</position>
@@ -26,12 +27,11 @@
     <position>above-component</position>
     <position>right-sidebar</position>
     <position>below-component</position>
-    <position>footer1</position>
-    <position>footer2</position>
-    <position>footer3</position>
-    <position>footer4</position>
-    <position>footer5</position>
-    <position>footer6</position>
+    <position>footer-1</position>
+    <position>footer-2</position>
+    <position>footer-3</position>
+    <position>footer-4</position>
+    <position>footer-5</position>
     <position>copyright</position>
   </positions>
 </extension>
