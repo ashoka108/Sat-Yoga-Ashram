@@ -282,14 +282,14 @@ i.inverted.circular.green.icon {
 
 /* Teal */
 i.teal.icon {
-  color: #428bca !important;
+  color: #807b60 !important;
 }
 i.inverted.teal.icon {
   color: #6DFFFF !important;
 }
 i.inverted.bordered.teal.icon,
 i.inverted.circular.teal.icon {
-  background-color: #428bca !important;
+  background-color: #807b60 !important;
   color: #FFFFFF !important;
 }
 
@@ -360,14 +360,14 @@ i.inverted.circular.brown.icon {
 
 /* Grey */
 i.grey.icon {
-  color: #F2E4D3 !important;
+  color: #4f5556 !important;
 }
 i.inverted.grey.icon {
   color: #DCDDDE !important;
 }
 i.inverted.bordered.grey.icon,
 i.inverted.circular.grey.icon {
-  background-color: #F2E4D3 !important;
+  background-color: #4f5556 !important;
   color: #FFFFFF !important;
 }
 

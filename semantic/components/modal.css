@@ -25,7 +25,7 @@
   box-shadow: 1px 3px 3px 0px rgba(0, 0, 0, 0.2), 1px 3px 15px 2px rgba(0, 0, 0, 0.2);
   -webkit-transform-origin: 50% 25%;
           transform-origin: 50% 25%;
-  border-radius: 0.28571429rem;
+  border-radius: 0.2857rem;
   -webkit-user-select: text;
      -moz-user-select: text;
       -ms-user-select: text;
@@ -34,12 +34,12 @@
 }
 .ui.modal > :first-child:not(.icon),
 .ui.modal > .icon:first-child + * {
-  border-top-left-radius: 0.28571429rem;
-  border-top-right-radius: 0.28571429rem;
+  border-top-left-radius: 0.2857rem;
+  border-top-right-radius: 0.2857rem;
 }
 .ui.modal > :last-child {
-  border-bottom-left-radius: 0.28571429rem;
-  border-bottom-right-radius: 0.28571429rem;
+  border-bottom-left-radius: 0.2857rem;
+  border-bottom-right-radius: 0.2857rem;
 }
 
 
@@ -75,16 +75,16 @@
 
 .ui.modal > .header {
   display: block;
-  font-family: 'rr';
+  font-family: 'Alegreya SC', serif;
   background: #FFFFFF;
   margin: 0em;
   padding: 1.25rem 1.5rem;
   box-shadow: none;
   color: rgba(0, 0, 0, 0.85);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.13);
+  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
 }
 .ui.modal > .header:not(.ui) {
-  font-size: 1.42857143rem;
+  font-size: 1.75rem;
   line-height: 1.2857em;
   font-weight: bold;
 }
@@ -174,7 +174,7 @@
 .ui.modal > .actions {
   background: #F9FAFB;
   padding: 1rem 1rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.13);
+  border-top: 1px solid rgba(34, 36, 38, 0.15);
   text-align: right;
 }
 .ui.modal .actions > .button {
@@ -205,7 +205,7 @@
     margin: 0em 0em 0em -425px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1127px) {
   .ui.modal {
     width: 900px;
     margin: 0em 0em 0em -450px;
@@ -224,9 +224,9 @@
     padding-right: 2.25rem;
   }
   .ui.modal > .close {
-    top: 1.0535rem;
+    top: 0.955rem;
     right: 1rem;
-    color: rgba(0, 0, 0, 0.87);
+    color: rgba(0, 0, 0, 0.8);
   }
 }
 
@@ -314,7 +314,7 @@
   right: 1.5rem;
 }
 .ui.inverted.dimmer > .basic.modal {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.8);
 }
 .ui.inverted.dimmer > .ui.basic.modal > .header {
   color: rgba(0, 0, 0, 0.85);
@@ -404,9 +404,9 @@
   padding-right: 2.25rem;
 }
 .ui.fullscreen.modal > .close {
-  top: 1.0535rem;
+  top: 0.955rem;
   right: 1rem;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /*--------------
@@ -441,7 +441,7 @@
     margin: 0em 0em 0em -340px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1127px) {
   .ui.small.modal {
     width: 720px;
     margin: 0em 0em 0em -360px;
@@ -476,7 +476,7 @@
     margin: 0em 0em 0em -510px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1127px) {
   .ui.large.modal {
     width: 1080px;
     margin: 0em 0em 0em -540px;
