@@ -14,6 +14,7 @@
     <filename>templateDetails.xml</filename>
     <folder>images</folder>
     <folder>css</folder>
+    <folder>html</folder>
   </files>
   <positions>
     <position>mobile-sidebar</position>
