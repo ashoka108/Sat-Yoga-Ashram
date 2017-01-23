@@ -62,3 +62,10 @@
   position: relative;
   bottom: 6em;
 }
+
+h2 {
+  padding-top: 2em;
+}
+h3 {
+  padding-top: 1em;
+}
