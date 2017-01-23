@@ -9,6 +9,7 @@
  ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+
     <!-- Google fonts import -->
 <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Open+Sans:400,400i,700" rel="stylesheet">
   <head>
@@ -93,7 +94,7 @@
        $componentwidth = "sixteen wide";
      }
      ?>
-      <div class="ui raised segment container">
+      <div class="ui lane raised segment container">
         <?php if($this->countModules('above-component')) : ?>
           <jdoc:include type="modules" name="above-component" style="none" />
         <?php endif; ?>

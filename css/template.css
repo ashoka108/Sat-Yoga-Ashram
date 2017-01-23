@@ -66,3 +66,21 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
   color: lightgrey;
   text-align: right;
 }
+
+.nivo-controlNav {
+  position: relative;
+  bottom: 4.5em;
+  z-index: 125;
+}
+
+.lane.raised.segment {
+  position: relative;
+  bottom: 6em;
+}
+
+h2 {
+  padding-top: 2em;
+}
+h3 {
+  padding-top: 1em;
+}
