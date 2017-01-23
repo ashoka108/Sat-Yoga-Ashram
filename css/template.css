@@ -84,3 +84,13 @@ h3 {
 .banner {
   margin-top: 16px;
 }
+
+.ui.massive.message {
+    position: relative;
+    bottom: 3em;
+    font-family: alegreya SC;
+}
+
+.ui.fluid.container {
+    background-color: #faf9f5;
+}

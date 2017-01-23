@@ -15430,7 +15430,7 @@ ol.ui.horizontal.list li:before,
   background: #00FFF FF;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
   margin: 4rem 0em;
-  padding: 2em 1em;
+  padding: 2em 0em;
   border-radius: 0.2857rem;
   border: 0px solid rgba(34, 36, 38, 0.15);
 }
@@ -15515,7 +15515,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui[class*="very basic"].table.segment {
-  padding: 2em 1em;
+  padding: 2em 0em;
 }
 
 /*******************************
@@ -22800,7 +22800,7 @@ Floated Menu / Item
 .ui.message {
   position: relative;
   min-height: 1em;
-  margin: 3em 0em;
+  margin: 0em 0em;
   background: #00F8F8F9 F9;
   padding: 1em 1.5em;
   line-height: 1.33;
@@ -22842,7 +22842,7 @@ Floated Menu / Item
 
 .ui.message p {
   opacity: 0.85;
-  margin: 0.75em 0em;
+  margin: 3em 0em;
 }
 
 .ui.message p:first-child {
@@ -22997,7 +22997,7 @@ Floated Menu / Item
 }
 
 .ui.bottom.attached.message:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
 }
 
 .ui.attached.icon.message {
