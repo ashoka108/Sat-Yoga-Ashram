@@ -18,8 +18,9 @@
   <positions>
     <position>mobile-sidebar</position>
     <position>top-left</position>
-    <position>top-right</position>
+    <position>logo</position>
     <position>search</position>
+    <position>top-right</position>
     <position>main-menu</position>
     <position>image-slider</position>
     <position>messages</position>

@@ -38,31 +38,36 @@
     <!-- Top Menu -->
     <header>
     <?php if($this->countModules('top-left') || $this->countModules('top-right') || $this->countModules('search')) : ?>
-      <div class="ui left aligned grid">
-        <div class="left floated left aligned six wide column">
+      <div class="ui centered grid top-menu">
+        <div class="computer tablet only left floated left aligned five wide column">
           <jdoc:include type="modules" name="top-left" style="none" />
         </div>
-        <div class="right floated right aligned three wide column">
+        <div class="center aligned three wide column">
+          <jdoc:include type="modules" name="logo" style="none" />
+        </div>
+        <div class="right floated right aligned one wide column">
           <jdoc:include type="modules" name="top-right" style="none" />
         </div>
-        <div class="right floated right aligned three wide column">
+        <div class="computer tablet only left floated left aligned three wide column">
           <jdoc:include type="modules" name="search" style="none" />
         </div>
+      </div>
     <?php endif; ?>
 
     <!-- Main menu -->
-      <div class="main-menu navbar">
-        <div class="ui responsive grid container">
-          <div class="computer only centered twelve wide column">
+        <div class="ui computer only main-menu grid">
+          <div class="ui center aligned main-menu container">
             <?php if($this->countModules('main-menu')) : ?>
               <jdoc:include type="modules" name="main-menu" style="none" />
             <?php endif; ?>
           </div>
-           <!-- Mobile menu -->
-          <div class="mobile tablet only two wide left floated column" onclick="toggleMobileMenu()">
-            <i class="big sidebar icon"></i>
-            <?php echo JText::_( 'Menu' );?>
-          </div>
+        </div>
+
+      <!-- Mobile menu icon -->
+      <div class="ui mobile tablet only main-menu grid">
+       <div class="ui mobile tablet only right floated column" onclick="toggleMobileMenu()">
+          <i class="big sidebar icon"></i>
+          <?php echo JText::_( 'Menu' );?>
         </div>
       </div>
     </header>
