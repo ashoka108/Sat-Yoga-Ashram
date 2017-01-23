@@ -15,12 +15,12 @@
 
 .ui.segment {
   position: relative;
-  background: #FFFFFF;
+  background: #00FFF FF;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
-  margin: 1rem 0em;
-  padding: 1em 1em;
+  margin: 4rem 0em;
+  padding: 2em 1em;
   border-radius: 0.2857rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 0px solid rgba(34, 36, 38, 0.15);
 }
 .ui.segment:first-child {
   margin-top: 0em;
@@ -38,7 +38,7 @@
   border-radius: 0px;
   box-shadow: none;
   border: none;
-  border-bottom: 1px solid rgba(34, 36, 38, 0.15);
+  border-bottom: 0px solid rgba(34, 36, 38, 0.15);
 }
 .ui.vertical.segment:last-child {
   border-bottom: none;
@@ -76,22 +76,22 @@
 .ui.page.grid.segment,
 .ui.grid > .row > .ui.segment.column,
 .ui.grid > .ui.segment.column {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 .ui.grid.segment {
-  margin: 1rem 0em;
+  margin: 4rem 0em;
   border-radius: 0.2857rem;
 }
 
 /* Table */
 .ui.basic.table.segment {
-  background: #FFFFFF;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  background: #00FFF FF;
+  border: 0px solid rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 .ui[class*="very basic"].table.segment {
-  padding: 1em 1em;
+  padding: 2em 1em;
 }
 
 
@@ -128,7 +128,7 @@
   left: 0px;
   position: absolute;
   width: 100%;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 0px solid rgba(34, 36, 38, 0.15);
   box-shadow: '';
 }
 .ui.piled.segments:before,
@@ -167,7 +167,7 @@
 --------------------*/
 
 .ui.stacked.segment {
-  padding-bottom: 1.4em;
+  padding-bottom: 2.4em;
 }
 .ui.stacked.segments:before,
 .ui.stacked.segments:after,
@@ -271,8 +271,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  margin: 1rem 0em;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  margin: 4rem 0em;
+  border: 0px solid rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
   border-radius: 0.2857rem;
 }
@@ -292,7 +292,7 @@
   width: auto;
   box-shadow: none;
   border: none;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: 0px solid rgba(34, 36, 38, 0.15);
 }
 .ui.segments:not(.horizontal) > .segment:first-child {
   border-top: none;
@@ -320,8 +320,8 @@
 
 /* Nested Group */
 .ui.segments > .ui.segments {
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
-  margin: 1rem 1rem;
+  border-top: 0px solid rgba(34, 36, 38, 0.15);
+  margin: 4rem 4rem;
 }
 .ui.segments > .segments:first-child {
   border-top: none;
@@ -342,11 +342,11 @@
   background-color: transparent;
   border-radius: 0px;
   padding: 0em;
-  background-color: #FFFFFF;
+  background-color: #00FFF FF;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
-  margin: 1rem 0em;
+  margin: 4rem 0em;
   border-radius: 0.2857rem;
-  border: 1px solid rgba(34, 36, 38, 0.15);
+  border: 0px solid rgba(34, 36, 38, 0.15);
 }
 
 /* Nested Horizontal Group */
@@ -356,7 +356,7 @@
   border-radius: 0px;
   border: none;
   box-shadow: none;
-  border-top: 1px solid rgba(34, 36, 38, 0.15);
+  border-top: 0px solid rgba(34, 36, 38, 0.15);
 }
 
 /* Horizontal Segment */
@@ -372,7 +372,7 @@
   border-radius: 0px;
   border: none;
   box-shadow: none;
-  border-left: 1px solid rgba(34, 36, 38, 0.15);
+  border-left: 0px solid rgba(34, 36, 38, 0.15);
 }
 
 /* Border Fixes */
@@ -706,11 +706,11 @@
   top: 0px;
   bottom: 0px;
   border-radius: 0px;
-  margin: 0em -1px;
-  width: calc(100% +  2px );
-  max-width: calc(100% +  2px );
+  margin: 0em 0px;
+  width: calc(100% +  0px );
+  max-width: calc(100% +  0px );
   box-shadow: none;
-  border: 1px solid #D4D4D5;
+  border: 0px solid #D4D4D5;
 }
 .ui.attached:not(.message) + .ui.attached.segment:not(.top) {
   border-top: none;
@@ -721,7 +721,7 @@
   bottom: 0px;
   margin-bottom: 0em;
   top: 0px;
-  margin-top: 1rem;
+  margin-top: 4rem;
   border-radius: 0.2857rem 0.2857rem 0em 0em;
 }
 .ui.segment[class*="top attached"]:first-child {
@@ -733,7 +733,7 @@
   bottom: 0px;
   margin-top: 0em;
   top: 0px;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05), none;
   border-radius: 0em 0em 0.2857rem 0.2857rem;
 }
