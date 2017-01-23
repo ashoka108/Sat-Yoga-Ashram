@@ -73,14 +73,13 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
   z-index: 125;
 }
 
-.lane.raised.segment {
-  position: relative;
-  bottom: 6em;
-}
-
 h2 {
   padding-top: 2em;
 }
 h3 {
   padding-top: 1em;
+}
+
+.banner {
+  margin-top: 12px;
 }
