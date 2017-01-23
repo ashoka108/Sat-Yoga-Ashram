@@ -38,11 +38,11 @@
     <!-- Top Menu -->
     <header>
     <?php if($this->countModules('top-left') || $this->countModules('top-right') || $this->countModules('search')) : ?>
-      <div class="ui centered grid top-menu">
-        <div class="computer tablet only left floated left aligned five wide column">
+      <div class="ui centered responsive grid top-menu">
+        <div class="computer tablet only left floated left aligned four wide column">
           <jdoc:include type="modules" name="top-left" style="none" />
         </div>
-        <div class="center aligned three wide column">
+        <div class="center aligned four wide column">
           <jdoc:include type="modules" name="logo" style="none" />
         </div>
         <div class="right floated right aligned one wide column">
