@@ -6,8 +6,21 @@
   background: #4d5454;
 }
 
-.searchInput {
-  width: 20em;
+.ui.input input {
+  background-color: rgba(255, 255, 255, 0.2);
+  min-width: 10em;
+  max-width: 20em;
+}
+
+button.ui.grey.icon.button{
+  background: rgba(255, 255, 255, 0.1);
+}
+button.ui.grey.icon.button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ui.search .action:hover{
+  background: transparent;
 }
 
 .main-menu {
@@ -30,6 +43,9 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
 .tagline{
   text-transform: uppercase;
   color:white;
+  position: relative;
+  width: 100%;
+  font-family: alegreya SC;
 }
 .ui.secondary.inverted.menu .dropdown.item:hover, .ui.secondary.inverted.menu .link.item:hover, div.ui.dropdown.link.item:hover {
   background: none !important;

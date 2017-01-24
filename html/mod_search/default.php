@@ -28,7 +28,7 @@ else
 <div class="ui middle aligned search <?php echo $moduleclass_sfx ?>">
 	<form action="<?php echo JRoute::_('index.php');?>" method="post" class="">
 		<?php
-			$output .= '<div class="ui action fluid input"><input name="searchword" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="prompt search-query" type="text"' . $width;
+			$output .= '<div class="ui action fluid search-field input"><input name="searchword" id="mod-search-searchword" maxlength="' . $maxlength . '"  class="prompt search-query" type="text"' . $width;
 			$output .= ' placeholder="' . $text . '" />';
 
 			if ($button) :

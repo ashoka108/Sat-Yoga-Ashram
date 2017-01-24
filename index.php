@@ -45,10 +45,10 @@
         <div class="center aligned four wide column">
           <jdoc:include type="modules" name="logo" style="none" />
         </div>
-        <div class="right floated right aligned one wide column">
+        <div class="left aligned one wide column">
           <jdoc:include type="modules" name="top-right" style="none" />
         </div>
-        <div class="computer only left floated left aligned three wide column">
+        <div class="computer only right floated left aligned three wide column">
           <jdoc:include type="modules" name="search" style="none" />
         </div>
       </div>
