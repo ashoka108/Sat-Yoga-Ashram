@@ -16,7 +16,7 @@
 .ui.message {
   position: relative;
   min-height: 1em;
-  margin: 3em 0em;
+  margin: 0em 0em;
   background: #00F8F8F9 F9;
   padding: 1em 1.5em;
   line-height: 1.33;
@@ -54,7 +54,7 @@
 /* Paragraph */
 .ui.message p {
   opacity: 0.85;
-  margin: 0.75em 0em;
+  margin: 0em 3em 0em;
 }
 .ui.message p:first-child {
   margin-top: 0em;
@@ -196,7 +196,7 @@
   box-shadow: 0em 0em 0em 0px rgba(34, 36, 38, 0.15) inset, 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 .ui.bottom.attached.message:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
 }
 .ui.attached.icon.message {
   width: auto;

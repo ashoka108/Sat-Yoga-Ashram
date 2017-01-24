@@ -82,12 +82,50 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
 }
 
 h2 {
-  padding-top: 2em;
+  padding-top: 1em;
 }
 h3 {
   padding-top: 1em;
 }
 
 .banner {
-  margin-top: 12px;
+  margin-top: 16px;
 }
+
+.ui.massive.message {
+  background-color: #faf9f5;
+  -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  font-family: alegreya SC;
+  border-bottom: 2px solid #4d5454;
+  border-radius: 0;
+}
+
+.ui.fluid.image {
+  border-top: 2px solid;
+  border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
+  border-bottom: 2px solid;
+}
+.ui.fluid.container {
+  border-top: 2px solid #4d5454;
+  border-bottom: 2px solid #4d5454;
+  background-color: #faf9f5;
+  padding-bottom: 2em;
+  -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+}
+.ui.container.boarder {
+  border-bottom: 2px solid #4d5454;
+}
+.ui.gold.container {
+  border-top: 2px solid;
+  border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
+  border-bottom: 2px solid;
+}
+.ui.card {
+  margin-bottom: 4em !important;
+  margin-top: 4em !important;
+}
+

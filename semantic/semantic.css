@@ -15429,8 +15429,8 @@ ol.ui.horizontal.list li:before,
   position: relative;
   background: #00FFF FF;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
-  margin: 4rem 0em;
-  padding: 2em 1em;
+  margin: 4rem 2em;
+  padding: 0em 0em;
   border-radius: 0.2857rem;
   border: 0px solid rgba(34, 36, 38, 0.15);
 }
@@ -15497,12 +15497,12 @@ ol.ui.horizontal.list li:before,
 .ui.page.grid.segment,
 .ui.grid > .row > .ui.segment.column,
 .ui.grid > .ui.segment.column {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 0em;
+  padding-bottom: 0em;
 }
 
 .ui.grid.segment {
-  margin: 4rem 0em;
+  margin: 4rem 2em;
   border-radius: 0.2857rem;
 }
 
@@ -15515,7 +15515,7 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui[class*="very basic"].table.segment {
-  padding: 2em 1em;
+  padding: 0em 0em;
 }
 
 /*******************************
@@ -15598,7 +15598,7 @@ ol.ui.horizontal.list li:before,
 --------------------*/
 
 .ui.stacked.segment {
-  padding-bottom: 2.4em;
+  padding-bottom: 0.4em;
 }
 
 .ui.stacked.segments:before,
@@ -15708,7 +15708,7 @@ ol.ui.horizontal.list li:before,
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  margin: 4rem 0em;
+  margin: 4rem 2em;
   border: 0px solid rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
   border-radius: 0.2857rem;
@@ -15791,7 +15791,7 @@ ol.ui.horizontal.list li:before,
   padding: 0em;
   background-color: #00FFF FF;
   box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.05);
-  margin: 4rem 0em;
+  margin: 4rem 2em;
   border-radius: 0.2857rem;
   border: 0px solid rgba(34, 36, 38, 0.15);
 }
@@ -22800,7 +22800,7 @@ Floated Menu / Item
 .ui.message {
   position: relative;
   min-height: 1em;
-  margin: 3em 0em;
+  margin: 0em 0em;
   background: #00F8F8F9 F9;
   padding: 1em 1.5em;
   line-height: 1.33;
@@ -22842,7 +22842,7 @@ Floated Menu / Item
 
 .ui.message p {
   opacity: 0.85;
-  margin: 0.75em 0em;
+  margin: 0em 3em 0em;
 }
 
 .ui.message p:first-child {
@@ -22997,7 +22997,7 @@ Floated Menu / Item
 }
 
 .ui.bottom.attached.message:not(:last-child) {
-  margin-bottom: 3em;
+  margin-bottom: 0em;
 }
 
 .ui.attached.icon.message {
