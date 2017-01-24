@@ -3,7 +3,6 @@ function toggleMobileMenu(){
   .sidebar('toggle');
 }
 
-
 jQuery(document)
   .ready(function() {
 
@@ -18,11 +17,11 @@ jQuery(document)
     .accordion()
     ;
     // Sticky Sidenav
-    jQuery('#sideNav')
+    jQuery('#right-sidebar')
       .sticky({
-      offset:120,
-      offsetBottom:10,
+      offset:0,
+      offsetBottom:30,
       observeChanges:true,
-      context:'#componentContainer'
+      context:'#sidebarContext'
     });
   });

@@ -104,7 +104,7 @@
           </div>
           <?php if($this->countModules('right-sidebar')) : ?>
               <div class="four wide column" id="sidebarContext">
-                <div class="ui sticky">
+                <div class="ui sticky" id="right-sidebar">
                 <jdoc:include type="modules" name="right-sidebar" style="none" />
                 </div>
               </div>
