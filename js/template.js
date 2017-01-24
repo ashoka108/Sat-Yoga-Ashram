@@ -5,7 +5,10 @@ function toggleMobileMenu(){
 
 jQuery(document)
   .ready(function() {
-
+    // fix main menu to page on passing
+    jQuery('.main.menu').visibility({
+      type: 'fixed'
+    });
     // show dropdown on hover
     jQuery('.secondary.menu .ui.dropdown')
     .dropdown({
