@@ -54,7 +54,7 @@
 /* Paragraph */
 .ui.message p {
   opacity: 0.85;
-  margin: 3em 0em;
+  margin: 0em 3em 0em;
 }
 .ui.message p:first-child {
   margin-top: 0em;
