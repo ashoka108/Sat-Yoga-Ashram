@@ -6,8 +6,9 @@ function toggleMobileMenu(){
 jQuery(document)
   .ready(function() {
     // fix main menu to page on passing
-    jQuery('.main.menu').visibility({
-      type: 'fixed'
+    jQuery('.main-menu.grid').visibility({
+      type: 'fixed',
+      offset: 16,
     });
     // show dropdown on hover
     jQuery('.secondary.menu .ui.dropdown')
@@ -22,8 +23,8 @@ jQuery(document)
     // Sticky Sidenav
     jQuery('#right-sidebar')
       .sticky({
-      offset:0,
-      offsetBottom:30,
+      offset:24,
+      offsetBottom:60,
       observeChanges:true,
       context:'#sidebarContext'
     });
