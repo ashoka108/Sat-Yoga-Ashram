@@ -112,21 +112,9 @@ h2 {
 h3 {
   padding-top: 1em;
 }
-
 .banner {
   margin-top: 16px;
 }
-
-.ui.massive.message {
-  background-color: #faf9f5;
-  -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
-  -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
-  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
-  font-family: alegreya SC;
-  border-bottom: 2px solid #4d5454;
-  border-radius: 0;
-}
-
 .ui.fluid.image {
   border-top: 2px solid;
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
@@ -193,4 +181,16 @@ h3 {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+}
+.ui.quote.container{
+  background-color: #faf9f5;
+  -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  border-bottom: 2px solid #4d5454;
+  border-radius: 0;
+}
+.ui.sentence.segment{
+font-family: alegreya SC;
+font-size: 1.6em;
 }
