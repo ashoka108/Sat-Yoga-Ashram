@@ -28,4 +28,8 @@ jQuery(document)
       observeChanges:true,
       context:'#sidebarContext'
     });
-  });
+    //dimm on card
+    jQuery('.special.cards .image').dimmer({
+      on: 'hover'
+    });
+});
