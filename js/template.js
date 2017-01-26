@@ -29,7 +29,7 @@ jQuery(document)
       context:'#sidebarContext'
     });
     //dimm on card
-    jQuery('.special.cards .image').dimmer({
+    jQuery('.special.cards .segment.perm').dimmer({
       on: 'hover'
     });
 });
