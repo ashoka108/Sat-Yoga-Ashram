@@ -136,6 +136,8 @@ h3 {
   border-top: 2px solid;
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
   border-bottom: 2px solid;
+  background-image: url("images/contemporary_china_2.png");
+  background-repeat: repeat;
 }
 .ui.card {
   margin-bottom: 4em !important;
@@ -176,7 +178,7 @@ h3 {
 }
 .ui.medium.header {
   text-align: center;
-  color: white;
+  color: white !important;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -200,6 +202,6 @@ h3 {
 .ui.dim.button {
   margin: 1.5em .25em 0 0;
 }
-.ui.perm.card {
+.ui.lCard.card {
   width: 350px;
 }
