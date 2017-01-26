@@ -28,4 +28,12 @@ jQuery(document)
       observeChanges:true,
       context:'#sidebarContext'
     });
-  });
+    //dimm on card
+    jQuery('.special.cards .segment.lCard').dimmer({
+      on: 'hover'
+    });
+    //dimm on small card
+    jQuery('.special.cards .segment.sCard').dimmer({
+      on: 'hover'
+    });
+});

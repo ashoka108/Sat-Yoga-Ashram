@@ -119,6 +119,8 @@ h3 {
   border-top: 2px solid;
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
   border-bottom: 2px solid;
+  background-image: url("images/contemporary_china_2.png");
+  background-repeat: repeat;
 }
 .ui.card {
   margin-bottom: 4em !important;
@@ -151,7 +153,7 @@ h3 {
 }
 .ui.large.header {
   text-align: center;
-  color: white;
+  color: white !important;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -159,7 +161,7 @@ h3 {
 }
 .ui.medium.header {
   text-align: center;
-  color: white;
+  color: white !important;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -174,8 +176,17 @@ h3 {
   border-radius: 0;
 }
 .ui.sentence.segment{
-font-family: alegreya SC;
-font-size: 1.6em;
+  font-family: alegreya SC;
+  font-size: 1.6em;
+}
+.ui.message {
+  font-size: 1.17em;
+}
+.ui.dim.button {
+  margin: 1.5em .25em 0 0;
+}
+.ui.lCard.card {
+  width: 350px;
 }
 
 .home-slider {
