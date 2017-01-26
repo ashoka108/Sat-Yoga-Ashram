@@ -72,18 +72,21 @@
       </div>
     </header>
 
-    <!-- Mobile menu -->
-    <jdoc:include type="modules" name="image-slider" style="none" />
+    <!-- Image Slider -->
+    <div class="home-slider">
+      <jdoc:include type="modules" name="image-slider" style="none" />
+    </div>
 
-      <div class="ui container">
-        <?php if($this->countModules('breadcrumbs')) : ?>
-          <jdoc:include type="modules" name="breadcrumbs" style="none" />
-        <?php endif; ?>
-        <?php if($this->countModules('messages')) : ?>
-          <jdoc:include type="modules" name="messages" style="none" />
-          <jdoc:include type="message" />
-        <?php endif; ?>
-      </div>
+    <!-- System Messages and Breadcrumbs -->
+    <div class="ui container">
+      <?php if($this->countModules('breadcrumbs')) : ?>
+        <jdoc:include type="modules" name="breadcrumbs" style="none" />
+      <?php endif; ?>
+      <?php if($this->countModules('messages')) : ?>
+        <jdoc:include type="modules" name="messages" style="none" />
+        <jdoc:include type="message" />
+      <?php endif; ?>
+    </div>
 
     <?php if ($this->countModules('right-sidebar'))
      {
