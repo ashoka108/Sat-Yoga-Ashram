@@ -23,7 +23,7 @@ JHtml::_('behavior.caption');
 <div class="item-page<?php echo $this->pageclass_sfx; ?>" itemscope itemtype="http://schema.org/Article">
 	<!-- ESTA LACTANDO <meta itemprop="inLanguage" content="<?php echo ($this->item->language === '*') ? JFactory::getConfig()->get('language') : $this->item->language; ?>" /> -->
 	<?php if ($this->params->get('show_page_heading')) : ?>
-		<h1 class="ui dividing header"> <?php echo $this->escape($this->params->get('page_heading')); ?> </h1>
+		<h2 class="ui header"> <?php echo $this->escape($this->params->get('page_heading')); ?> </h2>
 	<?php endif;
 	if (!empty($this->item->pagination) && $this->item->pagination && !$this->item->paginationposition && $this->item->paginationrelative)
 	{
