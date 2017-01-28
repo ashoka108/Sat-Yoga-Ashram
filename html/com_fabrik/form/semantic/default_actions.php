@@ -27,9 +27,7 @@ if ($this->hasActions) : ?>
 		<?php endif; ?>
 		<?php if ( $form->prevButton || $form->nextButton ): ?>
 			<div class="ui right aligned container">
-				<div class="ui big button">
-					<?php echo $form->prevButton . ' ' . $form->nextButton; ?>
-				</div>
+				<?php echo $form->prevButton . ' ' . $form->nextButton; ?>
 			</div>
 		<?php endif; ?>
 		<?php if ( $form->gobackButton || $form->resetButton || $form->deleteButton ): ?>
