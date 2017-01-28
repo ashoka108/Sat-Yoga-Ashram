@@ -103,7 +103,7 @@ p:last-child {
 
 a {
   color: #41546a;
-  text-decoration: #41546a;
+  text-decoration: none;
 }
 a:hover {
   color: #4b617a;

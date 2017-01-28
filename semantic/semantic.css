@@ -607,7 +607,7 @@ p:last-child {
 
 a {
   color: #41546a;
-  text-decoration: #41546a;
+  text-decoration: none;
 }
 
 a:hover {
@@ -687,7 +687,7 @@ input::selection {
   background: #E0E1E2 none;
   color: rgba(0, 0, 0, 0.6);
   font-family: 'Open Sans', sans-serif;
-  margin: 0em 0.25em 1.5em 0em;
+  margin: 0em 0.25em 0em 0em;
   padding: 0.6875em 1.5em 0.6875em;
   text-transform: none;
   text-shadow: none;
@@ -4526,7 +4526,7 @@ input::selection {
   flex-direction: row;
   font-size: 0em;
   vertical-align: baseline;
-  margin: 1.5em 0.25em 0em 0em;
+  margin: 0em 0.25em 0em 0em;
 }
 
 .ui.buttons:not(.basic):not(.inverted) {
@@ -28666,7 +28666,7 @@ a.ui.card:hover,
   -ms-user-select: none;
   user-select: none;
   will-change: opacity;
-  z-index: 1000;
+  z-index: 75;
 }
 
 /* Dimmer Content */
