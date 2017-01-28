@@ -18,13 +18,11 @@ if ($this->hasActions) : ?>
 	<div class="row-fluid">
 		<?php if ( $form->submitButton || $form->applyButton || $form->copyButton ): ?>
 			<div class="ui right aligned container">
-				<div class="ui big button">
 					<?php
 					echo $form->submitButton . ' ';
 					echo $form->applyButton . ' ';
 					echo $form->copyButton;
 					?>
-				</div>
 			</div>
 		<?php endif; ?>
 		<?php if ( $form->prevButton || $form->nextButton ): ?>
@@ -36,13 +34,11 @@ if ($this->hasActions) : ?>
 		<?php endif; ?>
 		<?php if ( $form->gobackButton || $form->resetButton || $form->deleteButton ): ?>
 			<div class="ui right aligned container">
-				<div class="ui big button">
 					<?php
 					echo $form->gobackButton  . ' ' . $this->message;
 					echo $form->resetButton . ' ';
 					echo $form->deleteButton;
 					?>
-				</div>
 			</div>
 		<?php endif; ?>
 	</div>

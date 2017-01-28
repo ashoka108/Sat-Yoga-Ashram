@@ -25,14 +25,14 @@ foreach ($this->elements as $element) :
 	endif;
 
 	if ($element->startRow) : ?>
-		<div class="row-fluid">
+		<div class="fields row-fluid">
 	<?php
 		$rowStarted = true;
 	endif;
 	$style = $element->hidden ? 'style="display:none"' : '';
 	$span = $element->hidden ? '' : ' ' . $element->span;
 	?>
-			<div class="control-group <?php echo $element->containerClass . $span; ?>" <?php echo $style?>>
+			<div class="field control-group <?php echo $element->containerClass . $span; ?>" <?php echo $style?> >
 	<?php
 	$labelsAbove = $element->labels;
 

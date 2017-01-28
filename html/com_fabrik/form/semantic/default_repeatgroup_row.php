@@ -15,8 +15,7 @@ defined('_JEXEC') or die('Restricted access');
 $group = $this->group;
 ?>
 <tr class="fabrikSubGroupElements fabrikSubGroup">
-<?php foreach ($this->elements as $element) :
-	?>
+<?php foreach ($this->elements as $element) : ?>
 	<td class="<?php echo $element->containerClass; ?>">
 	<?php
 	if ($this->tipLocation == 'above') :

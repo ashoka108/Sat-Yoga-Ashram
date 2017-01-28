@@ -30,7 +30,7 @@
     <!-- Mobile Menu-->
     <div class="ui sidebar inverted vertical accordion menu" id="mobile-sidebar">
       <?php if($this->countModules('mobile-sidebar')) : ?>
-        <jdoc:include type="modules" name="mobile-sidebar" style="none" />
+        <jdoc:include type="modules" name="mobile-sidebar" style="xhtml" />
       <?php endif; ?>
     </div>
     <div class="pusher">
@@ -72,18 +72,24 @@
       </div>
     </header>
 
-    <!-- Mobile menu -->
-    <jdoc:include type="modules" name="image-slider" style="none" />
+    <!-- Image Slider -->
+    <div class="home-slider">
+      <jdoc:include type="modules" name="image-slider" style="none" />
+    </div>
 
-      <div class="ui container">
-        <?php if($this->countModules('breadcrumbs')) : ?>
-          <jdoc:include type="modules" name="breadcrumbs" style="none" />
-        <?php endif; ?>
-        <?php if($this->countModules('messages')) : ?>
-          <jdoc:include type="modules" name="messages" style="none" />
-          <jdoc:include type="message" />
-        <?php endif; ?>
-      </div>
+    <!-- System Messages and Breadcrumbs -->
+    <div class="ui container">
+      <?php if($this->countModules('breadcrumbs')) : ?>
+        <jdoc:include type="modules" name="breadcrumbs" style="none" />
+      <?php endif; ?>
+      <?php if($this->countModules('messages')) : ?>
+        <jdoc:include type="modules" name="messages" style="none" />
+        <jdoc:include type="message" />
+      <?php endif; ?>
+    </div>
+
+    <?php // Use this to do cool stuff -->>>>
+    // echo('<pre>');print_r($list);echo('</pre>'); ?>
 
     <?php if ($this->countModules('right-sidebar'))
      {

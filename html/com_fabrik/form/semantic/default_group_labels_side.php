@@ -17,25 +17,12 @@ $element = $this->element;
 
 
 <div class="controls">
-	<?php if ($this->tipLocation == 'above') : ?>
-		<span class=""><?php echo $element->tipAbove ?></span>
-	<?php endif ?>
-
-	<div class="field fabrikElement">
+	<div class="fabrikElement" <?php if ($this->tipLocation == 'side') : ?>data-content="<?php echo $element->tipSide ?>"<?php endif ?>>
 		<?php echo $element->label;?>
 		<?php echo $element->element;?>
 	</div>
-
-	<div class="<?php echo $this->class?>">
-		<?php echo $element->error ?>
+	<div class="ui error message <?php echo $this->class?>">
+		<p><?php echo $element->error ?></p>
 	</div>
-
-	<?php if ($this->tipLocation == 'side') : ?>
-		<span class=""><?php echo $element->tipSide ?></span>
-	<?php endif ?>
-
 </div>
 
-<?php if ($this->tipLocation == 'below') :?>
-	<span class=""><?php echo $element->tipBelow ?></span>
-<?php endif ?>

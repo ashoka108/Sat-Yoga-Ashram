@@ -20,35 +20,40 @@ $info    = $params->get('info_block_position', 0);
 	<div class="system-unpublished">
 <?php endif; ?>
 
-<!-- Icon Printer -->
-<?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
-    <?php echo JLayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item, 'print' => false)); ?>
-<?php endif; ?>
-<!-- Icon Printer -->
+<div class="item">
+<div class="content">
+<!-- Header -->
+	<?php echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); ?>
 
-<?php echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); ?>
+	<div class="meta">
+	<!-- Icon Printer -->
+	<?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
+	    <?php echo JLayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item, 'print' => false)); ?>
+	<?php endif; ?>
+	<?php // Todo Not that elegant would be nice to group the params ?>
+	<?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
+		|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author') ); ?>
 
+	<div class="ui stackable container">
+	<?php if ($useDefList && ($info == 0 || $info == 2)) : ?>
+		<div class="four wide column">
+			<?php echo JLayoutHelper::render('joomla.content.info_block.block', array('item' => $this->item, 'params' => $params, 'position' => 'above')); ?>
+		</div>
+	<?php endif; ?>
 
-<?php // Todo Not that elegant would be nice to group the params ?>
-<?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
-	|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author') ); ?>
-
-<div class="ui stackable container">
-<?php if ($useDefList && ($info == 0 || $info == 2)) : ?>
-	<div class="four wide column">
-		<?php echo JLayoutHelper::render('joomla.content.info_block.block', array('item' => $this->item, 'params' => $params, 'position' => 'above')); ?>
+	<?php if ($params->get('show_tags') && !empty($this->item->tags->itemTags)) : ?>
+		<div class="eight wide column">
+		<?php echo JLayoutHelper::render('joomla.content.tags', $this->item->tags->itemTags); ?>
+		</div>
+	<?php endif; ?>
 	</div>
-<?php endif; ?>
+</div>
 
-<?php if ($params->get('show_tags') && !empty($this->item->tags->itemTags)) : ?>
-	<div class="eight wide column">
-	<?php echo JLayoutHelper::render('joomla.content.tags', $this->item->tags->itemTags); ?>
-	</div>
-<?php endif; ?>
 
-<div class="twelve wide column">
+<div class="description">
+
+<!-- Intro Image -->
 <?php echo JLayoutHelper::render('joomla.content.intro_image', $this->item); ?>
-
 
 <?php if (!$params->get('show_intro')) : ?>
 	<?php echo $this->item->event->afterDisplayTitle; ?>
@@ -78,6 +83,7 @@ $info    = $params->get('info_block_position', 0);
 	|| ((strtotime($this->item->publish_down) < strtotime(JFactory::getDate())) && $this->item->publish_down != JFactory::getDbo()->getNullDate())) : ?>
 
 <?php endif; ?>
-</div>
 
+</div>
+</div>
 <?php echo $this->item->event->afterDisplayContent; ?>

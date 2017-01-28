@@ -33,7 +33,7 @@ endif;
 
 echo $form->intro;
 ?>
-<form method="post" class="ui form error" <?php echo $form->attribs?>>
+<form method="post" class="ui equal width form" <?php echo $form->attribs?>>
 <?php
 echo $this->plugintop;
 ?>
@@ -69,7 +69,7 @@ foreach ($this->groups as $group) :
 		endif;
 
 		if (!empty($group->intro)) : ?>
-			<div class="ui groupintro text container"><?php echo $group->intro ?></div>
+			<div class="ui groupintro very padded container"><?php echo $group->intro ?></div>
 		<?php
 		endif;
 
