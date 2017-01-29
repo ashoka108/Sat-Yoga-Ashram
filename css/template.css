@@ -1,7 +1,14 @@
 .hidden.menu {
   display: none;
 }
-
+.ui.card .dimmer {
+position: relative;
+z-index: 9;
+}
+.ui .dimmer .active {
+position: relative;
+z-index: 9;
+}
 .top-menu {
   background: #4d5454;
 }
@@ -106,7 +113,7 @@ div.blog .image:hover {
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
   border-bottom: 2px solid;
 }
-.ui.fluid.container {
+.ui.fluid.beige.container {
   border-top: 2px solid #4d5454;
   border-bottom: 2px solid #4d5454;
   background-color: #faf9f5;
