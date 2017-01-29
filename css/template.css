@@ -24,7 +24,9 @@ z-index: 9;
   -o-transition:all .5s ease-in-out;
   -webkit-backface-visibility:hidden;
 }
-
+.top-padding {
+  padding-top: 1em;
+}
 button.ui.grey.icon.button{
   background: rgba(255, 255, 255, 0.1);
 }
