@@ -27,13 +27,18 @@ z-index: 9;
 .top-padding {
   padding-top: 1em;
 }
+.botton-margin {
+margin-bottom: 3em;
+}
 button.ui.grey.icon.button{
   background: rgba(255, 255, 255, 0.1);
 }
 button.ui.grey.icon.button:hover {
   background: rgba(255, 255, 255, 0.3);
 }
-
+#hp-community {
+margin-bottom: 2em;
+}
 .ui.search .action:hover{
   background: transparent;
 }
@@ -42,7 +47,15 @@ button.ui.grey.icon.button:hover {
   background-color: #807a60;
   width:100%;
 }
-
+.secondary-menu {
+position: relative;
+background-color: white !important;
+left: 0 !important;
+max-height: 50px;
+}
+.ui.basic.about {
+margin-bottom: 1em;
+}
 .main-menu.grid {
   margin: -1rem 0 -1rem 0 !important;
   border-style: solid;
