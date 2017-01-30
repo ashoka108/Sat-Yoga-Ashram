@@ -24,23 +24,40 @@ z-index: 9;
   -o-transition:all .5s ease-in-out;
   -webkit-backface-visibility:hidden;
 }
-
+.top-padding {
+  padding-top: 1em;
+}
+.botton-margin {
+margin-bottom: 3em;
+}
 button.ui.grey.icon.button{
   background: rgba(255, 255, 255, 0.1);
 }
 button.ui.grey.icon.button:hover {
   background: rgba(255, 255, 255, 0.3);
 }
-
+#hp-community {
+margin-bottom: 2em;
+}
 .ui.search .action:hover{
   background: transparent;
 }
-
+/*.ui.lane {
+width: 1200px;
+}*/
 .main-menu {
   background-color: #807a60;
   width:100%;
 }
-
+.secondary-menu {
+position: relative;
+background-color: white !important;
+left: 0 !important;
+max-height: 50px;
+}
+.ui.basic.about {
+margin-bottom: 1em;
+}
 .main-menu.grid {
   margin: -1rem 0 -1rem 0 !important;
   border-style: solid;
@@ -126,11 +143,11 @@ div.blog .image:hover {
 .ui.fluid.beige.container {
   border-top: 2px solid #4d5454;
   border-bottom: 2px solid #4d5454;
-  background-color: #faf9f5;
+  /*background-color: #faf9f5;*/
   padding-bottom: 2em;
-  -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+/*  -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
   -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
-  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);*/
 }
 .ui.container.boarder {
   border-bottom: 2px solid #4d5454;
@@ -139,8 +156,8 @@ div.blog .image:hover {
   border-top: 2px solid;
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
   border-bottom: 2px solid;
-  background-image: url("images/contemporary_china_2.png");
-  background-repeat: repeat;
+/*  background-image: url("images/contemporary_china_2.png");
+  background-repeat: repeat;*/
 }
 .ui.card {
   margin-bottom: 4em !important;
@@ -188,16 +205,19 @@ div.blog .image:hover {
   transform: translate(0, -50%);
 }
 .ui.quote.container{
-  background-color: #faf9f5;
+  /*background-color: #faf9f5;
   -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
   -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
-  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
+  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);*/
   border-bottom: 2px solid #4d5454;
   border-radius: 0;
 }
 .ui.sentence.segment{
   font-family: alegreya SC;
   font-size: 1.6em;
+  padding: 0 1em;
+  margin: 1em 0;
+
 }
 .ui.message {
   font-size: 1.17em;

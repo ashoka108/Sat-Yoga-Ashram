@@ -10,6 +10,11 @@ jQuery(document)
       type: 'fixed',
       offset: 16,
     });
+        // fix secondary menu to page on passing
+    jQuery('.secondary-menu').visibility({
+      type: 'fixed',
+      offset: 70.5,
+    });
     // show dropdown on hover
     jQuery('.secondary.menu .ui.dropdown')
     .dropdown({
@@ -23,7 +28,7 @@ jQuery(document)
     // Sticky Sidenav
     jQuery('#right-sidebar')
       .sticky({
-      offset:24,
+      offset:120,
       offsetBottom:60,
       observeChanges:true,
       context:'#sidebarContext'
