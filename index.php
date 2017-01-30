@@ -1,17 +1,17 @@
 <?php defined( '_JEXEC' ) or die( 'Restricted access' );
   // Include some Joomla variables to use in this template
-  $app = JFactory::getApplication();
+$app = JFactory::getApplication();
   $menu = $app->getMenu()->getActive(); // Get Current Active Menu
   $pageclass = ''; // Create a variable for page class
   // If there is a menu get the value of page class
   if (is_object($menu))
     $pageclass = $menu->params->get('pageclass_sfx');
- ?>
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
+  ?>
+  <!DOCTYPE html>
+  <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $this->language; ?>" lang="<?php echo $this->language; ?>" >
 
-    <!-- Google fonts import -->
-<link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Open+Sans:400,400i,700" rel="stylesheet">
+  <!-- Google fonts import -->
+  <link href="https://fonts.googleapis.com/css?family=Alegreya+SC|Open+Sans:400,400i,700" rel="stylesheet">
   <head>
     <!-- Standard Meta -->
     <meta charset="utf-8" />
@@ -35,26 +35,26 @@
     </div>
     <div class="pusher">
 
-    <!-- Top Menu -->
-    <header>
-    <?php if($this->countModules('top-left') || $this->countModules('top-right') || $this->countModules('search')) : ?>
-      <div class="ui centered stackable grid top-menu">
-        <div class="computer only left floated left aligned four wide column">
-          <jdoc:include type="modules" name="top-left" style="none" />
-        </div>
-        <div class="center aligned four wide column">
-          <jdoc:include type="modules" name="logo" style="none" />
-        </div>
-        <div class="left aligned one wide column">
-          <jdoc:include type="modules" name="top-right" style="none" />
-        </div>
-        <div class="computer only right floated left aligned three wide column">
-          <jdoc:include type="modules" name="search" style="none" />
-        </div>
-      </div>
-    <?php endif; ?>
+      <!-- Top Menu -->
+      <header>
+        <?php if($this->countModules('top-left') || $this->countModules('top-right') || $this->countModules('search')) : ?>
+          <div class="ui centered stackable grid top-menu">
+            <div class="computer only left floated left aligned four wide column">
+              <jdoc:include type="modules" name="top-left" style="none" />
+            </div>
+            <div class="center aligned four wide column">
+              <jdoc:include type="modules" name="logo" style="none" />
+            </div>
+            <div class="left aligned one wide column">
+              <jdoc:include type="modules" name="top-right" style="none" />
+            </div>
+            <div class="computer only right floated left aligned three wide column">
+              <jdoc:include type="modules" name="search" style="none" />
+            </div>
+          </div>
+        <?php endif; ?>
 
-    <!-- Main menu -->
+        <!-- Main menu -->
         <div class="ui computer only main-menu grid">
           <div class="ui center aligned main-menu container">
             <?php if($this->countModules('main-menu')) : ?>
@@ -63,9 +63,9 @@
           </div>
         </div>
 
-      <!-- Mobile menu icon -->
-      <div class="ui mobile tablet only main-menu grid">
-       <div class="ui mobile tablet only right floated column" onclick="toggleMobileMenu()">
+        <!-- Mobile menu icon -->
+        <div class="ui mobile tablet only main-menu grid">
+         <div class="ui mobile tablet only right floated column" onclick="toggleMobileMenu()">
           <i class="big sidebar icon"></i>
           <?php echo JText::_( 'Menu' );?>
         </div>
@@ -76,6 +76,7 @@
     <div class="home-slider">
       <jdoc:include type="modules" name="image-slider" style="none" />
     </div>
+
 
     <!-- System Messages and Breadcrumbs -->
     <div class="ui container">
@@ -92,57 +93,57 @@
     // echo('<pre>');print_r($list);echo('</pre>'); ?>
 
     <?php if ($this->countModules('right-sidebar'))
-     {
-       $componentwidth = "twelve wide";
-     }
-     else
-     {
-       $componentwidth = "sixteen wide";
-     }
-     ?>
-      <div class="ui lane raised segment container">
-        <?php if($this->countModules('above-component')) : ?>
-          <jdoc:include type="modules" name="above-component" style="none" />
-        <?php endif; ?>
-        <div class="ui grid container">
-          <div class="<?php echo $componentwidth ?> column">
-            <jdoc:include type="component" />
+    {
+     $componentwidth = "twelve wide";
+   }
+   else
+   {
+     $componentwidth = "sixteen wide";
+   }
+   ?>
+   <div class="ui lane raised segment container">
+    <?php if($this->countModules('above-component')) : ?>
+      <jdoc:include type="modules" name="above-component" style="none" />
+    <?php endif; ?>
+    <div class="ui grid container">
+      <div class="<?php echo $componentwidth ?> column">
+        <jdoc:include type="component" />
+      </div>
+      <?php if($this->countModules('right-sidebar')) : ?>
+        <div class="four wide column" id="sidebarContext">
+          <div class="ui sticky" id="right-sidebar">
+            <jdoc:include type="modules" name="right-sidebar" style="none" />
           </div>
-          <?php if($this->countModules('right-sidebar')) : ?>
-              <div class="four wide column" id="sidebarContext">
-                <div class="ui sticky" id="right-sidebar">
-                <jdoc:include type="modules" name="right-sidebar" style="none" />
-                </div>
-              </div>
-          <?php endif; ?>
         </div>
-          <?php if($this->countModules('below-component')) : ?>
-            <jdoc:include type="modules" name="below-component" style="none" />
-          <?php endif; ?>
-      </div>
-      <footer class="ui six column stackable grid container">
-        <div class="column">
-          <jdoc:include type="modules" name="footer-1" style="xhtml" />
-        </div>
-        <div class="column">
-          <jdoc:include type="modules" name="footer-2" style="xhtml" />
-        </div>
-        <div class="column">
-          <jdoc:include type="modules" name="footer-3" style="xhtml" />
-        </div>
-        <div class="column">
-          <jdoc:include type="modules" name="footer-4" style="xhtml" />
-        </div>
-        <div class="two wide column">
-          <jdoc:include type="modules" name="footer-5" style="xhtml" />
-        </div>
-      </footer>
-      <div class="ui container">
-        <?php if($this->countModules('copyright')) : ?>
-          <jdoc:include type="modules" name="copyright" style="none" />
-        <?php endif; ?>
-      </div>
-    </div> <!-- Ends Pusher -->
-   <script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/template.js"></script>
-  </body>
+      <?php endif; ?>
+    </div>
+    <?php if($this->countModules('below-component')) : ?>
+      <jdoc:include type="modules" name="below-component" style="none" />
+    <?php endif; ?>
+  </div>
+  <footer class="ui six column stackable grid container">
+    <div class="column">
+      <jdoc:include type="modules" name="footer-1" style="xhtml" />
+    </div>
+    <div class="column">
+      <jdoc:include type="modules" name="footer-2" style="xhtml" />
+    </div>
+    <div class="column">
+      <jdoc:include type="modules" name="footer-3" style="xhtml" />
+    </div>
+    <div class="column">
+      <jdoc:include type="modules" name="footer-4" style="xhtml" />
+    </div>
+    <div class="two wide column">
+      <jdoc:include type="modules" name="footer-5" style="xhtml" />
+    </div>
+  </footer>
+  <div class="ui container">
+    <?php if($this->countModules('copyright')) : ?>
+      <jdoc:include type="modules" name="copyright" style="none" />
+    <?php endif; ?>
+  </div>
+</div> <!-- Ends Pusher -->
+<script src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template; ?>/js/template.js"></script>
+</body>
 </html>
