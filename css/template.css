@@ -103,8 +103,8 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
 }
 .ui.menu .dropdown.item .menu {
   color: white;
-  background-color: rgba(255,255,255,0.15)!important;
-  border: 1px solid rgba(255,255,255,0.3)!important;
+  background-color: rgba(128, 122, 96, 0.8)!important;
+  border: 1px solid rgba(255,255,255,0.5)!important;
   box-shadow: none !important;
 }
 
@@ -229,9 +229,9 @@ div.blog .image:hover {
   width: 350px;
 }
 
+ /* Image Slider */
+
 .home-slider {
-  height:400px; /* Make all images exactly this height */
-  margin-top: 12px;
   overflow: hidden;
   border-bottom: 5px solid #4d5454;
   -moz-border-image: url(../images/gold-line-grey.jpg) 0 0 5 repeat round;
@@ -239,6 +239,10 @@ div.blog .image:hover {
   -o-border-image: url(../images/gold-line-grey.jpg) 0 0 5 repeat round;
   border-image: url(../images/gold-line-grey.jpg) 0 0 5 repeat round;
 }
+.slider-wrapper {
+  margin-top: 12px;
+}
+
 .nivo-caption {
   position:absolute;
   margin: 0 25% 0 25%;
@@ -270,6 +274,7 @@ a.nivoLink {
 .nivo-controlNav {
   position: relative;
   top: -60px;
+  margin-bottom: -75px;
   text-align: center;
   padding: 15px 0;
   color: white; !important

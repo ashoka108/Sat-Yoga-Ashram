@@ -7,8 +7,6 @@
  * http://www.opensource.org/licenses/mit-license.php
  */
 
-var imgHeight = '420px'; // Change this value to whatever height image you need
-
 (function($) {
     var NivoSlider = function(element, options){
         // Defaults are below

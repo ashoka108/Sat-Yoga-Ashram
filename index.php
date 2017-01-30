@@ -73,10 +73,9 @@ $app = JFactory::getApplication();
     </header>
 
     <!-- Image Slider -->
-    <div class="home-slider">
+    <div class="image-slider">
       <jdoc:include type="modules" name="image-slider" style="xhtml" />
     </div>
-
 
     <!-- System Messages and Breadcrumbs -->
     <div class="ui container">
