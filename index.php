@@ -74,7 +74,7 @@
 
     <!-- Image Slider -->
     <div class="home-slider">
-      <jdoc:include type="modules" name="image-slider" style="none" />
+      <jdoc:include type="modules" name="image-slider" style="xhtml" />
     </div>
 
     <!-- System Messages and Breadcrumbs -->
