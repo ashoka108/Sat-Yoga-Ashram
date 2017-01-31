@@ -16,8 +16,8 @@ defined('_JEXEC') or die;
 
     <div class="item">
     <?php if (json_decode($item->images)->image_intro) : ?>
-      <a class="ui tiny image" href="<?php echo $item->link; ?>">
-        <img src="<?php echo json_decode($item->images)->image_intro; ?>" alt="<?php echo json_decode($item->images)->image_intro_alt; ?>">
+      <a class="ui tiny rounded image" href="<?php echo $item->link; ?>">
+        <img class="small-blog" src="<?php echo json_decode($item->images)->image_intro; ?>" alt="<?php echo json_decode($item->images)->image_intro_alt; ?>">
       </a>
     <?php endif; ?>
     <div class="content">

@@ -26,6 +26,7 @@ $info    = $params->get('info_block_position', 0);
 	<?php echo JLayoutHelper::render('joomla.content.blog_style_default_item_title', $this->item); ?>
 
 	<div class="meta">
+	<span>
 	<!-- Icon Printer -->
 	<?php if ($canEdit || $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
 	    <?php echo JLayoutHelper::render('joomla.content.icons', array('params' => $params, 'item' => $this->item, 'print' => false)); ?>
@@ -33,7 +34,7 @@ $info    = $params->get('info_block_position', 0);
 	<?php // Todo Not that elegant would be nice to group the params ?>
 	<?php $useDefList = ($params->get('show_modify_date') || $params->get('show_publish_date') || $params->get('show_create_date')
 		|| $params->get('show_hits') || $params->get('show_category') || $params->get('show_parent_category') || $params->get('show_author') ); ?>
-
+</span>
 	<div class="ui stackable container">
 	<?php if ($useDefList && ($info == 0 || $info == 2)) : ?>
 		<div class="four wide column">

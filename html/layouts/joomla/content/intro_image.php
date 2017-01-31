@@ -15,7 +15,7 @@ $params  = $displayData->params;
 	<?php $imgfloat = (empty($images->float_intro)) ? $params->get('float_intro') : $images->float_intro; ?>
 	  <div class="ui blog <?php echo htmlspecialchars($imgfloat); ?> floated image">
 	<?php if ($params->get('link_titles') && $params->get('access-view')) : ?>
-		<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($displayData->slug, $displayData->catid, $displayData->language)); ?>"><img class="ui rounded image"
+		<a href="<?php echo JRoute::_(ContentHelperRoute::getArticleRoute($displayData->slug, $displayData->catid, $displayData->language)); ?>"><img class="ui small rounded image"
 	<?php if ($images->image_intro_caption):
 		echo ' title="' . htmlspecialchars($images->image_intro_caption) . '"';
 	endif; ?>

@@ -1,5 +1,16 @@
-.hidden.menu {
-  display: none;
+.hp-symbols {
+position: relative;
+width: 300px;
+height: 51px;
+bottom: 314px;
+left: 377px;
+}
+.hp-custom {
+  margin-bottom: -56px;
+}
+.ui.button {
+    background-color: #5d0303;
+    color: #FFF;
 }
 .ui.card .dimmer {
 position: relative;
@@ -25,7 +36,7 @@ z-index: 9;
   -webkit-backface-visibility:hidden;
 }
 .top-padding {
-  padding-top: 1em;
+  padding-top: 1em !important;
 }
 .botton-margin {
 margin-bottom: 3em;
@@ -164,27 +175,27 @@ div.blog .image:hover {
   margin-top: 4em !important;
 }
 .ui.teachings.segment {
-  background-image: url("/images/shuunya-teaching-for-web.png") !important;
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/images/shunyamurti-teachings.jpg") !important;
   height: 350px;
   position: relative;
 }
 .ui.retreats.segment {
-  background-image: url("/images/for-web-retreats1.png") !important;
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img.jpg") !important;
   height: 350px;
   position: relative;
 }
 .ui.translation.segment {
-  background-image: url("/images/for-web-retreats-small.png") !important;
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
   height: 300px;
   position: relative;
 }
 .ui.meditation.segment {
-  background-image: url("/images/for-web-retreats-small.png") !important;
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
   height: 300px;
   position: relative;
 }
 .ui.transformation.segment {
-  background-image: url("/images/for-web-retreats-small.png") !important;
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
   height: 300px;
   position: relative;
 }
@@ -195,6 +206,7 @@ div.blog .image:hover {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
 }
 .ui.medium.header {
   text-align: center;
@@ -203,21 +215,21 @@ div.blog .image:hover {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
 }
 .ui.quote.container{
   /*background-color: #faf9f5;
   -webkit-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
   -moz-box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);
-  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1);*/
-  border-bottom: 2px solid #4d5454;
+  box-shadow: inset 0px 0px 113px -19px rgba(205,194,159,1); */
+  border-bottom: 0px solid #4d5454;
   border-radius: 0;
 }
 .ui.sentence.segment{
   font-family: alegreya SC;
   font-size: 1.6em;
-  padding: 0 1em;
   margin: 1em 0;
-
+  text-align: center;
 }
 .ui.message {
   font-size: 1.17em;
@@ -227,6 +239,9 @@ div.blog .image:hover {
 }
 .ui.lCard.card {
   width: 350px;
+}
+.small-blog {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
 }
 
  /* Image Slider */
@@ -264,9 +279,11 @@ div.blog .image:hover {
 }
 .nivo-caption h1 {
   font-size: 36px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
 }
 .nivo-pretitle, .nivo-posttitle{
   font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
 }
 a.nivoLink {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
