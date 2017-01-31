@@ -120,20 +120,20 @@ $app = JFactory::getApplication();
       <jdoc:include type="modules" name="below-component" style="none" />
     <?php endif; ?>
   </div>
-  <footer class="ui six column stackable grid container">
-    <div class="column">
+  <footer class="ui stackable grid container">
+    <div class="three wide column">
       <jdoc:include type="modules" name="footer-1" style="xhtml" />
     </div>
-    <div class="column">
+    <div class="three wide column">
       <jdoc:include type="modules" name="footer-2" style="xhtml" />
     </div>
-    <div class="column">
+    <div class="three wide column">
       <jdoc:include type="modules" name="footer-3" style="xhtml" />
     </div>
-    <div class="column">
+    <div class="three wide column">
       <jdoc:include type="modules" name="footer-4" style="xhtml" />
     </div>
-    <div class="two wide column">
+    <div class="four wide column">
       <jdoc:include type="modules" name="footer-5" style="xhtml" />
     </div>
   </footer>
