@@ -125,7 +125,7 @@ div.blog .image:hover {
 .banner {
   margin-top: 16px;
 }
-.ui.fluid.image {
+.ui.fluid.hp.image {
   border-top: 2px solid;
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
   border-bottom: 2px solid;
@@ -343,3 +343,4 @@ div.blog .image:hover {
 .nivo-controlNav a.active {
   font-weight:bold;
 }
+
