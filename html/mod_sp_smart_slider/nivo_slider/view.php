@@ -8,9 +8,9 @@
     // no direct access
     defined('_JEXEC') or die;
 
-    //$helper->addJQuery($document);
+    $helper->addJQuery($document);
 
-    //$document->addStylesheet(JURI::base(true) . '/modules/'. $module_name.'/tmpl/'.$style.'/themes/'.$option['theme'].'/'.$option['theme'].'.css');
+    $document->addStylesheet(JURI::base(true) . '/modules/'. $module_name.'/tmpl/'.$style.'/themes/'.$option['theme'].'/'.$option['theme'].'.css');
 
     $document->addScriptDeclaration("
 
@@ -113,7 +113,7 @@
             // add readmore text
             if( isset($val['readmore']) and !empty($val['readmore']) ):
             ?>
-            <a href="<?php echo $val['link'] ?>" class="nivo-readmore"><?php echo $val['readmore'] ?></a>
+            <a class="ui right floated large button nivoLink" href="<?php echo $val['link'] ?>"><?php echo $val['readmore'] ?></a>
             <?php
                 endif;
         ?>

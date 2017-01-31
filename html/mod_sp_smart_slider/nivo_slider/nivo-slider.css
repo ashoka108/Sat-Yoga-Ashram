@@ -6,12 +6,12 @@
  * Free to use and abuse under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
  */
- 
+
 /* The Nivo Slider styles */
 .nivoSlider {
 	position:relative;
 	width:100%;
-	height:auto;
+	height:420px;
 	overflow: hidden;
 }
 .nivoSlider img {
@@ -22,7 +22,7 @@
 }
 .nivo-main-image {
 	display: block !important;
-	position: relative !important; 
+	position: relative !important;
 	width: 100% !important;
 }
 
@@ -38,8 +38,8 @@
 	margin:0;
 	z-index:6;
 	display:none;
-	background:white; 
-	filter:alpha(opacity=0); 
+	background:white;
+	filter:alpha(opacity=0);
 	opacity:0;
 }
 /* The slices and boxes in the Slider */
@@ -61,11 +61,12 @@
 /* Caption styles */
 .nivo-caption {
 	position:absolute;
+	margin: 0 25% 0 25%;
 	left:0px;
-	bottom:0px;
-	background:#000;
+	bottom:40px;
+	/*background:#000;*/
 	color:#fff;
-	width:100%;
+	width:50%;
 	z-index:8;
 	padding: 5px 10px;
 	opacity: 0.8;
@@ -77,6 +78,10 @@
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 }
+.nivo-caption h1 {
+	font-size: 36px;
+}
+
 .nivo-caption p {
 	padding:5px;
 	margin:0;
@@ -84,6 +89,16 @@
 .nivo-caption a {
 	display:inline !important;
 }
+
+.nivo-pretitle, .nivo-posttitle{
+	font-weight: bold;
+}
+
+a.nivoLink {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
+}
+
+
 .nivo-html-caption {
     display:none;
 }
@@ -102,8 +117,11 @@
 }
 /* Control nav styles (e.g. 1,2,3...) */
 .nivo-controlNav {
-	text-align:center;
+	position: relative;
+	top: -60px;
+	text-align: center;
 	padding: 15px 0;
+	color: white; !important
 }
 .nivo-controlNav a {
 	cursor:pointer;
