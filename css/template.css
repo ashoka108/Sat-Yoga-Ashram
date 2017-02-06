@@ -54,7 +54,10 @@ margin-bottom: 2em;
   background: transparent;
 }
 /*.ui.lane {
-width: 1200px;
+ width: 1200px;
+-webkit-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
+box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
 }*/
 .main-menu {
   background-color: #807a60;
