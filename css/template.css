@@ -16,12 +16,52 @@ left: 377px;
 position: relative;
 z-index: 9;
 }
+#en-top {
+    padding-bottom: 4px;
+}
+.logo {
+    min-height: 52px;
+    position: relative;
+    top: 4px;
+    margin-left: 0.2em;
+}
+h1.logo-text {
+    font-size: 3.5em;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    color: rgb(222, 216, 185);
+}
+.ui.large.menu {
+    font-size: 1.1rem;
+}
 .ui .dimmer .active {
 position: relative;
 z-index: 9;
 }
 .top-menu {
   background: #4d5454;
+}
+.searchInput {
+    position: relative;
+    left: 84px;
+    padding-bottom: 8px;
+}
+.ui.menu .item {
+padding: 0em 1.125em;
+}
+.alone.item.parent {
+    max-height: 30px;
+}
+.ui .secondary.menu.item {
+    padding: .2125em .9375em;
+    margin: 0.2em .3125em;
+}
+.ui.dropdown.link.item {
+    padding: 0em 1.125em;
+}
+.ui.menu {
+margin: 0;
 }
 .ui.input input {
   background-color: rgba(255, 255, 255, 0.2);
@@ -53,12 +93,16 @@ margin-bottom: 2em;
 .ui.search .action:hover{
   background: transparent;
 }
-/*.ui.lane {
- width: 1200px;
+.pusher {
+    background-color: #fbfaf6;
+}
+.ui.lane {
+  background-color: white;
+/*  width: 1200px;
 -webkit-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
 -moz-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
-}*/
+box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);*/
+}
 .main-menu {
   background-color: #807a60;
   width:100%;
@@ -95,14 +139,12 @@ margin-bottom: 1em;
 div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div > a {
   text-transform: uppercase !important;
 }
-
 .tagline {
-  text-transform: uppercase;
-  color:white;
-  position: relative;
-  width: 100%;
-  font-family: alegreya SC;
-  word-wrap:
+    color: white;
+    position: relative;
+    font-size: 1.3em;
+    margin-left: 0.5em;
+    bottom: 13px;
 }
 .ui.secondary.inverted.menu .dropdown.item:hover, .ui.secondary.inverted.menu .link.item:hover, div.ui.dropdown.link.item:hover {
   background: none !important;
@@ -130,6 +172,8 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
   background: none !important;
   box-shadow: none !important;
   border: none !important;
+    padding: 0.6em;
+    font-size: 1.1em;
 }
 
 .copyright {

@@ -13,7 +13,7 @@ jQuery(document)
         // fix secondary menu to page on passing
     jQuery('.secondary-menu').visibility({
       type: 'fixed',
-      offset: 70.5,
+      offset: 44,
     });
     // show dropdown on hover
     jQuery('.secondary.menu .ui.dropdown')

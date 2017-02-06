@@ -57,7 +57,7 @@
 }
 
 /* Small Monitor */
-@media only screen and (min-width: 992px) and (max-width: 1126px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .ui.container {
     width: 927px;
     margin-left: auto !important;
@@ -75,20 +75,20 @@
 }
 
 /* Large Monitor */
-@media only screen and (min-width: 1127px) {
+@media only screen and (min-width: 1200px) {
   .ui.container {
-    width: 1046px;
+    width: 1119px;
     margin-left: auto !important;
     margin-right: auto !important;
   }
   .ui.grid.container {
-    width: calc( 1046px  +  0rem ) !important;
+    width: calc( 1119px  +  0rem ) !important;
   }
   .ui.relaxed.grid.container {
-    width: calc( 1046px  +  0rem ) !important;
+    width: calc( 1119px  +  0rem ) !important;
   }
   .ui.very.relaxed.grid.container {
-    width: calc( 1046px  +  0rem ) !important;
+    width: calc( 1119px  +  0rem ) !important;
   }
 }
 
