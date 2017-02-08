@@ -64,7 +64,7 @@ foreach ($this->groups as $group) :
 	<div class="ui <?php echo $group->class; ?> segment" id="group<?php echo $group->id;?>" style="<?php echo $group->css;?>">
 		<?php
 		if ($group->showLegend) :?>
-			<h4 class="ui header legend"><?php echo $group->title;?></h4>
+			<h1 class="ui header legend"><?php echo $group->title;?></h1>
 		<?php
 		endif;
 

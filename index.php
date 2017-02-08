@@ -37,18 +37,12 @@ $app = JFactory::getApplication();
 
       <!-- Top Menu -->
       <header>
-        <?php if($this->countModules('top-left') || $this->countModules('top-right') || $this->countModules('search')) : ?>
+        <?php if($this->countModules('top-left') || $this->countModules('search')) : ?>
           <div class="ui centered stackable grid top-menu">
-            <div class="computer only left floated left aligned five wide column">
+            <div class="computer only left floated left aligned nine wide column">
               <jdoc:include type="modules" name="top-left" style="none" />
             </div>
-            <div class="center aligned four wide column">
-              <jdoc:include type="modules" name="logo" style="none" />
-            </div>
-            <div class="left aligned one wide column">
-              <jdoc:include type="modules" name="top-right" style="none" />
-            </div>
-            <div class="computer only right floated right aligned four wide column">
+            <div class="computer only right floated right aligned seven wide column">
               <jdoc:include type="modules" name="search" style="none" />
             </div>
           </div>

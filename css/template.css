@@ -1,67 +1,38 @@
-.hp-symbols {
-position: relative;
-width: 300px;
-height: 51px;
-bottom: 314px;
-left: 377px;
-}
-.hp-custom {
-  margin-bottom: -56px;
-}
-.ui.button {
-    background-color: #5d0303;
-    color: #FFF;
-}
-.ui.card .dimmer {
-position: relative;
-z-index: 9;
-}
-#en-top {
-    padding-bottom: 4px;
-}
+/*---Page Template---*/
+
 .logo {
-    min-height: 52px;
-    position: relative;
-    top: 4px;
-    margin-left: 0.2em;
+  min-height: 52px;
+  position: relative;
+  top: 4px;
+  margin-left: 0.2em;
 }
 h1.logo-text {
-    font-size: 3.5em;
-    margin: 0;
-    position: relative;
-    top: 15px;
-    color: rgb(222, 216, 185);
+  font-size: 3.5em;
+  margin: 0;
+  position: relative;
+  top: 15px;
+  color: rgb(222, 216, 185);
 }
-.ui.large.menu {
-    font-size: 1.1rem;
+.tagline {
+  color: white;
+  position: relative;
+  font-size: 1.3em;
+  margin-left: 0.5em;
+  bottom: 13px;
 }
-.ui .dimmer .active {
-position: relative;
-z-index: 9;
+#languages {
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0.6em;
+  font-size: 1.1em;
 }
-.top-menu {
-  background: #4d5454;
-}
+
+/*- Search*/
+
 .searchInput {
     position: relative;
-    left: 84px;
     padding-bottom: 8px;
-}
-.ui.menu .item {
-padding: 0em 1.125em;
-}
-.alone.item.parent {
-    max-height: 30px;
-}
-.ui .secondary.menu.item {
-    padding: .2125em .9375em;
-    margin: 0.2em .3125em;
-}
-.ui.dropdown.link.item {
-    padding: 0em 1.125em;
-}
-.ui.menu {
-margin: 0;
 }
 .ui.input input {
   background-color: rgba(255, 255, 255, 0.2);
@@ -75,46 +46,39 @@ margin: 0;
   -o-transition:all .5s ease-in-out;
   -webkit-backface-visibility:hidden;
 }
-.top-padding {
-  padding-top: 1em !important;
-}
-.botton-margin {
-margin-bottom: 3em;
-}
-button.ui.grey.icon.button{
-  background: rgba(255, 255, 255, 0.1);
-}
-button.ui.grey.icon.button:hover {
-  background: rgba(255, 255, 255, 0.3);
-}
-#hp-community {
-margin-bottom: 2em;
-}
 .ui.search .action:hover{
   background: transparent;
 }
-.pusher {
-    background-color: #fbfaf6;
+
+/*- Menus*/
+
+.ui.menu {
+margin: 0;
 }
-.ui.lane {
-  background-color: white;
-/*  width: 1200px;
--webkit-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
--moz-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);*/
+.ui.large.menu {
+    font-size: 1.1rem;
+}
+
+
+/*- - Top Menu*/
+
+.top-menu {
+  background: #4d5454;
+  max-width: 100%;
+  margin: 0em !important;
+}
+#en-top {
+    padding-bottom: 4px;
+}
+
+ /*- - Main Menu*/
+.ui.main-menu.container {
+    padding: 0em;
+    width: 100%;
 }
 .main-menu {
   background-color: #807a60;
   width:100%;
-}
-.secondary-menu {
-position: relative;
-background-color: white !important;
-left: 0 !important;
-max-height: 50px;
-}
-.ui.basic.about {
-margin-bottom: 1em;
 }
 .main-menu.grid {
   margin: -1rem 0 -1rem 0 !important;
@@ -135,22 +99,31 @@ margin-bottom: 1em;
   -o-transition:all .5s ease-in-out;
   -webkit-backface-visibility:hidden;
 }
-
 div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div > a {
   text-transform: uppercase !important;
 }
-.tagline {
-    color: white;
-    position: relative;
-    font-size: 1.3em;
-    margin-left: 0.5em;
-    bottom: 13px;
+
+
+/*- - Secondary menu*/
+
+.secondary-menu {
+position: relative;
+background-color: white !important;
+left: 0 !important;
+max-height: 50px;
 }
+.ui .secondary.menu.item {
+    padding: .2125em .9375em;
+    margin: 0.2em .3125em;
+}
+
+
+/*- - Dropdown*/
+
 .ui.secondary.inverted.menu .dropdown.item:hover, .ui.secondary.inverted.menu .link.item:hover, div.ui.dropdown.link.item:hover {
   background: none !important;
 }
-
-.ui.dropdown.link.item[data-level='-1'] > a.alone.item.parent:after {
+.ui.dropdown.link.item[data-level='-1'] > a.link.item:after {
   content:"▼";
   padding: 0 0 0 5px;
   font-size: 9px;
@@ -167,37 +140,108 @@ div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div
 .ui.menu .ui.dropdown .menu>.item {
   color: rgba(255,255,255,.87)!important;
 }
-
-#languages {
-  background: none !important;
-  box-shadow: none !important;
-  border: none !important;
-    padding: 0.6em;
-    font-size: 1.1em;
+.alone.item.parent {
+    max-height: 30px;
 }
+.ui.menu .item {
+padding: 0em 1.125em;
+}
+.ui.dropdown.link.item {
+    padding: 0em 0em;
+}
+
+/*- Footer*/
 
 .copyright {
   color: lightgrey;
   text-align: right;
 }
-div.blog .image {
-  -webkit-box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
-  -moz-box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
-  box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+
+/*- Elements*/
+
+body.default {
+    background-color: #fbfaf6;
 }
-div.blog .image:hover {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+.ui.breadcrumb {
+    margin-bottom: 0.5em !important;
+}
+.ui.lane {
+  background-color: white;
+  margin-top: 0.8em;
+/*  width: 1200px;
+-webkit-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);
+box-shadow: 0px 10px 11px 4px rgba(0,0,0,0.7);*/
+}
+.ui.button {
+    background-color: #5d0303;
+    color: #FFF;
+}
+button.ui.grey.icon.button{
+  background: rgba(255, 255, 255, 0.1);
+}
+button.ui.grey.icon.button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+.ui.dim.button {
+  margin: 1.5em .25em 0 0;
+}
+
+/*- - Cards*/
+
+.ui.card {
+  margin: 4em 0 !important;
+  max-width: 350px;
+}
+.ui.card .dimmer {
+position: relative;
+z-index: 9;
+}
+.ui.lCard.card {
+  width: 100%;
+}
+.ui.sCard.card {
+  width: 100%;
+  max-width: 300px;
+}
+.ccard {
+  min-width: 350px
+}
+.sccard {
+  min-width: 300px
+}
+.ui .dimmer .active {
+position: relative;
+z-index: 9;
 }
 
 .banner {
   margin-top: 16px;
 }
-.ui.fluid.hp.image {
-  border-top: 2px solid;
-  border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
-  border-bottom: 2px solid;
+.ui.large.header {
+  text-align: center;
+  color: white !important;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
+  font-size: 2.8em;
 }
+.ui.medium.header {
+  text-align: center;
+  color: white !important;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
+}
+
+/*- Containers*/
+/*.sms {
+  padding-bottom: 1.2em;
+}*/
 .ui.fluid.beige.container {
   border-top: 2px solid #4d5454;
   border-bottom: 2px solid #4d5454;
@@ -214,55 +258,10 @@ div.blog .image:hover {
   border-top: 2px solid;
   border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
   border-bottom: 2px solid;
+  margin-top: 4em;
+  padding: 3em 0;
 /*  background-image: url("images/contemporary_china_2.png");
   background-repeat: repeat;*/
-}
-.ui.card {
-  margin-bottom: 4em !important;
-  margin-top: 4em !important;
-}
-.ui.teachings.segment {
-  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/images/shunyamurti-teachings.jpg") !important;
-  height: 350px;
-  position: relative;
-}
-.ui.retreats.segment {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img.jpg") !important;
-  height: 350px;
-  position: relative;
-}
-.ui.translation.segment {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
-  height: 300px;
-  position: relative;
-}
-.ui.meditation.segment {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
-  height: 300px;
-  position: relative;
-}
-.ui.transformation.segment {
-  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
-  height: 300px;
-  position: relative;
-}
-.ui.large.header {
-  text-align: center;
-  color: white !important;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
-}
-.ui.medium.header {
-  text-align: center;
-  color: white !important;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
 }
 .ui.quote.container{
   /*background-color: #faf9f5;
@@ -281,14 +280,146 @@ div.blog .image:hover {
 .ui.message {
   font-size: 1.17em;
 }
-.ui.dim.button {
-  margin: 1.5em .25em 0 0;
+
+
+/*Universal CSS*/
+
+.top-padding {
+  padding-top: 1em !important;
 }
-.ui.lCard.card {
-  width: 350px;
+.botton-margin {
+margin-bottom: 3em;
+}
+@media only screen and (max-width: 991px) {
+  .main-menu {
+    background-color: rgba(238, 236, 226, 0.78);
+  }
+  .image-slider {
+    padding-top: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ui.card {
+    margin: 0em 0 !important;
+  }
+  .ui.text.container {
+    line-height: 1.2;
+  }
+  .ui.sentence.segment {
+    margin: 3em 0;
+  }
+  .image-slider {
+    display: none;
+  }
+
+}
+
+/*---Page Specific CSS---*/
+
+/*Homepage*/
+
+.hp-symbols {
+height: 51px;
+}
+.hp-custom {
+  margin-bottom: -56px;
+}
+#hp-community {
+margin-bottom: 2em;
+}
+.ui.fluid.hp.image {
+  border-top: 2px solid;
+  border-image: url(../images/gold-line.jpg) 2 0 2 0 repeat round;
+  border-bottom: 2px solid;
+}
+
+/*- About*/
+
+.ui.basic.about {
+margin-bottom: 1em;
+}
+
+/*- Logout*/
+
+.logout {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+
+/*- Add Event*/
+
+.input-append {
+    width: 226px;
+}
+
+/*- Login*/
+
+.ui.login {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 3em;
+}
+.ui.lost.message {
+    font-size: 0.9em;
+}
+.ui.breadcrumb.form-breadcrumb {
+    margin-top: 2em;
+}
+
+/*- Contact us*/
+h1.ui.header.legend {
+    font-size: 2.5em;
+    margin-bottom: -0.5em;
+}
+
+/*- Blog*/
+
+div.blog .image {
+  -webkit-box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+  -moz-box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+  box-shadow: 6px 6px 21px -8px rgba(0,0,0,0.75);
+}
+div.blog .image:hover {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
 }
 .small-blog {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 1) !important;
+}
+
+  /*- Specific Cards*/
+
+.ui.teachings.segment {
+  background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("/images/shunyamurti-teachings.jpg") !important;
+  height: 350px;
+  position: relative;
+  margin: 0 auto !important;
+}
+.ui.retreats.segment {
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img.jpg") !important;
+  height: 350px;
+  position: relative;
+  margin: 0 auto !important;
+}
+.ui.translation.segment {
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
+  height: 300px;
+  position: relative;
+  margin: 0 auto !important;
+}
+.ui.meditation.segment {
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
+  height: 300px;
+  position: relative;
+  margin: 0 auto !important;
+}
+.ui.transformation.segment {
+  background: linear-gradient( rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.0) ), url("/images/retreats-img-small.jpg") !important;
+  height: 300px;
+  position: relative;
+  margin: 0 auto !important;
 }
 
  /* Image Slider */
@@ -304,7 +435,6 @@ div.blog .image:hover {
 .slider-wrapper {
   margin-top: 12px;
 }
-
 .nivo-caption {
   position:absolute;
   margin: 0 25% 0 25%;

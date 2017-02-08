@@ -77,7 +77,7 @@ JHtml::_('behavior.formvalidator');
 				<?php echo JHtml::_('form.token'); ?>
 			</div>
 		</form>
-		<div class="ui message">
+		<div class="ui lost message">
 		  <a href="<?php echo JRoute::_('index.php?option=com_users&view=reset'); ?>">
 				<?php echo JText::_('COM_USERS_LOGIN_RESET'); ?></a>
 		  <a href="<?php echo JRoute::_('index.php?option=com_users&view=remind'); ?>">
