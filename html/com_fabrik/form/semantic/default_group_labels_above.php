@@ -17,7 +17,7 @@ $element = $this->element;
 
 
 <?php if ($this->tipLocation == 'above') : ?>
-	<span class=""><?php echo $element->tipAbove ?></span>
+	<span class="tipAbove"><?php echo $element->tipAbove ?></span>
 <?php endif ?>
 
 <div class="fabrikElement field">

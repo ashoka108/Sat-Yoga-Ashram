@@ -114,7 +114,7 @@ $app = JFactory::getApplication();
       <jdoc:include type="modules" name="below-component" style="none" />
     <?php endif; ?>
   </div>
-  <footer class="ui stackable grid container">
+  <footer class="ui footer stackable grid container">
     <div class="three wide column">
       <jdoc:include type="modules" name="footer-1" style="xhtml" />
     </div>

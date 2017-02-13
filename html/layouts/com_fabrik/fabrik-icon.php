@@ -17,6 +17,12 @@ $props = isset($d->properties) ? $d->properties : '';
   if ($d->icon == "icon-next"){
     $d->icon = 'ui chevron right icon';
   }
+  if ($d->icon == "icon-calendar "){
+    $d->icon = 'calendar icon';
+  }
+  if ($d->icon == "icon-clock timeButton"){
+    $d->icon = 'wait icon timeButton';
+  }
  ?>
 
 <i data-isicon="true" class="<?php echo $d->icon;?>" <?php echo $props;?>></i>

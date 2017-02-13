@@ -156,6 +156,27 @@ padding: 0em 1.125em;
   color: lightgrey;
   text-align: right;
 }
+/*- - C-contact signup*/
+
+form.ctct-custom-form.Form {
+    min-width: 250px !important;
+    padding: 0em;
+}
+.ctct-custom-form p {
+    margin: 0;
+    margin-bottom: 4px !important;
+}
+.ctct-custom-form input[type="text"] {
+    padding: 5px 13px !important;
+    font-family: Open sans, Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+.ctct-custom-form .ctct-form-footer {
+    text-align: center;
+    }
+    #cclink {
+    color: #3535e2;
+}
 
 /*- Elements*/
 
@@ -348,12 +369,6 @@ margin-bottom: 1em;
     margin-top: 3em;
 }
 
-/*- Add Event*/
-
-.input-append {
-    width: 226px;
-}
-
 /*- Login*/
 
 .ui.login {
@@ -371,7 +386,7 @@ margin-bottom: 1em;
 /*- Contact us*/
 h1.ui.header.legend {
     font-size: 2.5em;
-    margin-bottom: -0.5em;
+    margin-bottom: 0em;
 }
 
 /*- Blog*/

@@ -63,7 +63,24 @@ echo "
 #form_123 .foobar, #form_123_$rowid .foobar {
 	display: none;
 }
-
+.input-append {
+    width: 225px;
+}
+input#upcoming_events___price {
+    width: 10em;
+    display: block;
+}
+textarea#upcoming_events___description {
+    width: 40em;
+    display: block;
+}
+input#upcoming_events___label {
+    width: 20em;
+    display: block;
+}
+img.imagedisplayor {
+    height: 200px;
+}
 /* END - Your CSS styling ends here */
 
 ";
