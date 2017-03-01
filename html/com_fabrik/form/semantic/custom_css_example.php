@@ -81,6 +81,11 @@ input#upcoming_events___label {
 img.imagedisplayor {
     height: 200px;
 }
+/* - Retreat application submit button */
+
+button.ui.button.btn-primary.button.submit_application {
+    float: right;
+}
 /* END - Your CSS styling ends here */
 
 ";

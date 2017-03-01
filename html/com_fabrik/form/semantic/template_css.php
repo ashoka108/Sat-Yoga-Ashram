@@ -84,5 +84,30 @@ img.fabrikImg {
     border-radius: 3px;
     height: 2.2em;
 }
+
+/* - Retreat application submit button */
+
+a.ui.button.btn-primary.button.submit_application {
+    float: right;
+}
+.ui.warning.message.message {
+    border: 1px solid;
+    margin-bottom: 1em;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.fabrikMainError.ui.message {
+    border: 1px solid #9f3a38;
+    color: #9f3a38;
+    background: #fff6f6;
+}
+.row-fluid.button-row {
+    display: flex;
+    margin: 6em 2em 2em;
+}
+input.fabrikinput {
+    margin-right: 0.5em;
+}
 ";
 ?>

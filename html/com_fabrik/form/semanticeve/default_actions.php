@@ -17,7 +17,7 @@ if ($this->hasActions) : ?>
 <div class="fabrikActions form-actions">
 	<div class="row-fluid">
 		<?php if ( $form->submitButton || $form->applyButton || $form->copyButton ): ?>
-			<div class="ui right aligned container">
+			<div class="ui container">
 					<?php
 					echo $form->submitButton . ' ';
 					echo $form->applyButton . ' ';

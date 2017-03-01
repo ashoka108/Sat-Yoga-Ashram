@@ -542,26 +542,26 @@ h4,
 h5 {
   font-family: 'Alegreya SC', serif;
   line-height: 1.2857em;
-  margin: 2em 0em 1rem;
+  margin: 1em 0em 1rem;
   font-weight: normal;
   padding: 0em;
 }
 
 h1 {
   min-height: 1rem;
-  font-size: 4rem;
-}
-
-h2 {
   font-size: 3rem;
 }
 
+h2 {
+  font-size: 2.2rem;
+}
+
 h3 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h5 {
@@ -4259,7 +4259,7 @@ input::selection {
 
 .ui.secondary.buttons .button,
 .ui.secondary.button {
-  background-color: #807b60;
+  background-color: #c9a24a;
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
@@ -4271,21 +4271,21 @@ input::selection {
 
 .ui.secondary.buttons .button:hover,
 .ui.secondary.button:hover {
-  background-color: #908a69;
+  background-color: #d5ae58;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:focus,
 .ui.secondary.button:focus {
-  background-color: #99936f;
+  background-color: #ddb65f;
   color: #FFFFFF;
   text-shadow: none;
 }
 
 .ui.secondary.buttons .button:active,
 .ui.secondary.button:active {
-  background-color: #9a9579;
+  background-color: #d5b671;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4294,7 +4294,7 @@ input::selection {
 .ui.secondary.buttons .active.button:active,
 .ui.secondary.active.button,
 .ui.secondary.button .active.button:active {
-  background-color: #918b68;
+  background-color: #d7af55;
   color: #FFFFFF;
   text-shadow: none;
 }
@@ -4303,35 +4303,35 @@ input::selection {
 
 .ui.basic.secondary.buttons .button,
 .ui.basic.secondary.button {
-  box-shadow: 0px 0px 0px 1px #807b60 inset !important;
-  color: #807b60 !important;
+  box-shadow: 0px 0px 0px 1px #c9a24a inset !important;
+  color: #c9a24a !important;
 }
 
 .ui.basic.secondary.buttons .button:hover,
 .ui.basic.secondary.button:hover {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #908a69 inset !important;
-  color: #908a69 !important;
+  box-shadow: 0px 0px 0px 1px #d5ae58 inset !important;
+  color: #d5ae58 !important;
 }
 
 .ui.basic.secondary.buttons .button:focus,
 .ui.basic.secondary.button:focus {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #99936f inset !important;
-  color: #908a69 !important;
+  box-shadow: 0px 0px 0px 1px #ddb65f inset !important;
+  color: #d5ae58 !important;
 }
 
 .ui.basic.secondary.buttons .active.button,
 .ui.basic.secondary.active.button {
   background: transparent !important;
-  box-shadow: 0px 0px 0px 1px #918b68 inset !important;
-  color: #9a9579 !important;
+  box-shadow: 0px 0px 0px 1px #d7af55 inset !important;
+  color: #d5b671 !important;
 }
 
 .ui.basic.secondary.buttons .button:active,
 .ui.basic.secondary.button:active {
-  box-shadow: 0px 0px 0px 1px #9a9579 inset !important;
-  color: #9a9579 !important;
+  box-shadow: 0px 0px 0px 1px #d5b671 inset !important;
+  color: #d5b671 !important;
 }
 
 .ui.buttons:not(.vertical) > .basic.primary.button:not(:first-child) {
@@ -6331,7 +6331,7 @@ i.flag.zimbabwe:before {
 
 .ui.header {
   border: none;
-  margin: 2em 0em 1rem;
+  margin: 1em 0em 1rem;
   padding: 0em 0em;
   font-family: 'Alegreya SC', serif;
   font-weight: normal;
@@ -6450,19 +6450,19 @@ i.flag.zimbabwe:before {
 ---------------*/
 
 h1.ui.header {
-  font-size: 4rem;
-}
-
-h2.ui.header {
   font-size: 3rem;
 }
 
+h2.ui.header {
+  font-size: 2.2rem;
+}
+
 h3.ui.header {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h4.ui.header {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 h5.ui.header {
@@ -6497,19 +6497,19 @@ h5.ui.header .sub.header {
 
 .ui.huge.header {
   min-height: 1em;
-  font-size: 4em;
-}
-
-.ui.large.header {
   font-size: 3em;
 }
 
+.ui.large.header {
+  font-size: 2.2em;
+}
+
 .ui.medium.header {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 .ui.small.header {
-  font-size: 1.5em;
+  font-size: 1.2em;
 }
 
 .ui.tiny.header {
@@ -6574,7 +6574,7 @@ h5.ui.header .sub.header {
 .ui.icon.header {
   display: inline-block;
   text-align: center;
-  margin: 2rem 0em 1rem;
+  margin: 1rem 0em 1rem;
 }
 
 .ui.icon.header:after {
@@ -7124,7 +7124,7 @@ a.ui.inverted.grey.header:hover {
 --------------------*/
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
-  font-size: 2em;
+  font-size: 1.8em;
 }
 
 /*******************************

@@ -49,7 +49,7 @@ $info    = $params->get('info_block_position', 0);
 </div>
 
 
-<div class="description">
+<div class="description blog-description">
 
 <!-- Intro Image -->
 <?php echo JLayoutHelper::render('joomla.content.intro_image', $this->item); ?>

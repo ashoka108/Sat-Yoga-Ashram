@@ -16,7 +16,7 @@ $msgList = $displayData['msgList'];
 	<?php if (is_array($msgList) && !empty($msgList)) : ?>
 		<div id="system-message">
 			<?php foreach ($msgList as $type => $msgs) : ?>
-				<div class="ui <?php echo $type; ?> message">
+				<div class="ui warning <?php echo $type; ?> message">
 					<?php // This requires JS so we should add it trough JS. Progressive enhancement and stuff. ?>
 					<i class="close icon" data-dismiss="alert"></i>
 					<?php if (!empty($msgs)) : ?>

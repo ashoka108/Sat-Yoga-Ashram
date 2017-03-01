@@ -12,8 +12,7 @@ $item = $displayData['item'];
 ?>
 
 <p class="readmore">
-	<a class="ui button" href="<?php echo $displayData['link']; ?>" itemprop="url">
-		<span class="chevron right icon"></span>
+	<a class="ui secondary basic button" href="<?php echo $displayData['link']; ?>" itemprop="url">
 		<?php if (!$params->get('access-view')) :
 			echo JText::_('COM_CONTENT_REGISTER_TO_READ_MORE');
 		elseif ($readmore = $item->alternative_readmore) :
@@ -27,5 +26,6 @@ $item = $displayData['item'];
 			echo JText::_('COM_CONTENT_READ_MORE');
 			echo JHtml::_('string.truncate', ($item->title), $params->get('readmore_limit'));
 		endif; ?>
+		<i class="angle right icon"></i>
 	</a>
 </p>
