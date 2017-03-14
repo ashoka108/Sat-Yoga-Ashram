@@ -66,7 +66,9 @@ jQuery(document)
 
     // Email subscription thank you message
     jQuery('.basic.modal.news-sub')
-  .modal('attach events', '.ui.button.news-sub', 'show')
-;
+  .modal('attach events', '.ui.button.news-sub', 'show');
+
+  // Add active class to menu items with matching url
+  jQuery('a[href^="/' + location.pathname.split("/")[1] + '/' +location.pathname.split("/")[2] + '"]').addClass(' active');
 
   });
