@@ -54,10 +54,6 @@ jQuery(document)
     blurring: true
     //allowMultiple: false
     })
-    // embed youtube
-    jQuery('.url.example .ui.embed').embed();
-
-
     jQuery('.second.modal.feedback')
     // Trigger thank you message
     .modal('attach events', '.ui.button.btn-primary.button.submit', 'show');
@@ -67,5 +63,10 @@ jQuery(document)
     // show first when clicked
     jQuery('.first.modal.feedback')
     .modal('attach events', '.ui.button.feedback-modal', 'show');
+
+    // Email subscription thank you message
+    jQuery('.basic.modal.news-sub')
+  .modal('attach events', '.ui.button.news-sub', 'show')
+;
 
   });

@@ -111,12 +111,13 @@ margin: 0;
     text-shadow: -2px 2px 5px rgba(0, 0, 0, 0.75);
     font-family: 'alegreya SC';
 }*/
-.ui.secondary.pointing.menu .active.item {
+.ui.secondary.pointing.menu.banner-menu .active.item {
     font-weight: 400;
     color: rgba(251, 250, 246, 0.9);
     padding: 0em;
     border-bottom: solid 4px #fbfaf6;
 }
+
 .ui.secondary.pointing.menu .active.item:hover {
     border-color: #4d0101;
     color: rgb(77, 1, 1);
@@ -182,7 +183,10 @@ a.item.alias-parent-active:hover {
 div.main-menu.container > div.menu > a, div.main-menu.container > div.menu > div > a {
   text-transform: uppercase !important;
 }
-
+/*- manager menu*/
+.ui.large.secondary.inverted.secondary-menu.pointing.fluid.four.item.menu.jmoddiv.jmodinside {
+    background: #4d0101 !important;
+}
 
 /*- - Secondary menu*/
 
@@ -196,7 +200,9 @@ max-height: 50px;
     padding: .2125em .9375em;
     margin: 0.2em .3125em;
 }
-
+.ui.secondary.pointing.menu .item {
+  align-self: center;
+}
 
 /*- - Dropdown*/
 
@@ -212,8 +218,8 @@ max-height: 50px;
 }
 .ui.menu .dropdown.item .menu {
   color: white;
-  background-color: rgba(128, 122, 96, 0.8)!important;
-  border: 1px solid rgba(255,255,255,0.5)!important;
+  background-color: rgba(75, 2, 2, 0.8)!important;
+  border: 1px solid rgba(201,162,75,0.5)!important;
   box-shadow: none !important;
 }
 
@@ -256,6 +262,10 @@ form.ctct-custom-form.Form {
     }
     #cclink {
     color: #b17e2b;
+}
+/* - c-contact inpage*/
+.three.fields {
+    margin: 1em -.5em 0.5em !important;
 }
 
 /*- Elements*/
